@@ -6,14 +6,21 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>Archives | Hexo</title>
+  <title>HTML基础 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/archives/page/2/index.html">
+  <meta name="description" content="认识HTML HTML文档基本格式（了解即可） &lt;!DOCTYPE&gt;文档类型声明 &lt;!DOCTYPE&gt;标记位于文档的最前面，用于向浏览器说明当前文档使用哪种HTML或XHTML标准规范。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="HTML基础">
+<meta property="og:url" content="http://example.com/2021/05/04/HTML%E5%9F%BA%E7%A1%80/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="认识HTML HTML文档基本格式（了解即可） &lt;!DOCTYPE&gt;文档类型声明 &lt;!DOCTYPE&gt;标记位于文档的最前面，用于向浏览器说明当前文档使用哪种HTML或XHTML标准规范。">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2021-05-04T04:09:48.000Z">
+<meta property="article:modified_time" content="2021-05-07T15:40:27.653Z">
 <meta property="article:author" content="John Doe">
+<meta property="article:tag" content="网页">
+<meta property="article:tag" content="HTML">
+<meta property="article:tag" content="Dreamweaver">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
@@ -148,109 +155,642 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-HTML基础" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2021" class="archive-year">2021</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2021/04/13/%E5%85%B3%E4%BA%8EMarkdown%E8%AF%AD%E6%B3%95%E7%9A%84%E7%B2%97%E7%95%A5%E5%AD%A6%E4%B9%A0/" class="archive-article-date">
-  	<time datetime="2021-04-13T14:48:59.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-04-13</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/04/13/%E5%85%B3%E4%BA%8EMarkdown%E8%AF%AD%E6%B3%95%E7%9A%84%E7%B2%97%E7%95%A5%E5%AD%A6%E4%B9%A0/">关于Markdown语法的粗略学习</a>
+    <h1 class="article-title" itemprop="name">
+      HTML基础
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2021/05/04/HTML%E5%9F%BA%E7%A1%80/" class="archive-article-date">
+  	<time datetime="2021-05-04T04:09:48.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-05-04</time>
+</a>
+        
+        
+          <span class="archive-article-date">
+            阅读量 <span id="busuanzi_value_page_pv"></span>
+          </span>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <hr>
+<ul>
+<li><h2 id="认识HTML"><a href="#认识HTML" class="headerlink" title="认识HTML"></a>认识HTML</h2><ul>
+<li><h3 id="HTML文档基本格式（了解即可）"><a href="#HTML文档基本格式（了解即可）" class="headerlink" title="HTML文档基本格式（了解即可）"></a>HTML文档基本格式（了解即可）</h3><ul>
+<li><h4 id="lt-DOCTYPE-gt-文档类型声明"><a href="#lt-DOCTYPE-gt-文档类型声明" class="headerlink" title="&lt;!DOCTYPE&gt;文档类型声明"></a>&lt;!DOCTYPE&gt;文档类型声明</h4><ul>
+<li><p>&lt;!DOCTYPE&gt;标记位于文档的最前面，用于向浏览器说明当前文档使用哪种HTML或XHTML标准规范。</p>
+<span id="more"></span></li>
+<li><p>必须在开头处使用&lt;!DOCTYPE&gt;标记为所有的XHTML文档指定XHTML版本和类型，这样浏览器才能将该网页作为有效的XHTML文档，并按指定的文档类型进行解析。</p>
+</li>
+<li><p>&lt;!DOCTYPE&gt;标记和浏览器的兼容性相关，删除&lt;!DOCTYPE&gt;，就是把如何展示HTML页面的权利交给浏览器。</p>
+</li>
+</ul>
+</li>
+<li><h4 id="lt-html-gt-根标记"><a href="#lt-html-gt-根标记" class="headerlink" title="&lt;html&gt;根标记"></a>&lt;html&gt;根标记</h4><ul>
+<li>&lt;html&gt;标记用于告知浏览器其自身是一个HTML文档。</li>
+<li>在&lt;html&gt;之后有一串代码“xmlns=”<a target="_blank" rel="noopener" href="http://www.w3.org/1999/xhtml&quot;%E2%80%9D%E7%94%A8%E4%BA%8E%E5%A3%B0%E6%98%8EXHTML%E7%BB%9F%E4%B8%80%E7%9A%84%E9%BB%98%E8%AE%A4%E5%91%BD%E5%90%8D%E7%A9%BA%E9%97%B4%E3%80%82">http://www.w3.org/1999/xhtml&quot;”用于声明XHTML统一的默认命名空间。</a></li>
+</ul>
+</li>
+<li><h4 id="lt-head-gt-头部标记"><a href="#lt-head-gt-头部标记" class="headerlink" title="&lt;head&gt;头部标记"></a>&lt;head&gt;头部标记</h4><ul>
+<li>主要用来封装其他位于文档头部的标记。</li>
+<li>一个HTML文档只能含有一对&lt;head&gt;标记，绝大多数文档头部包含的数据都不会真正作为内容显示在网页中。</li>
+</ul>
+</li>
+<li><h4 id="lt-body-gt-主体标记"><a href="#lt-body-gt-主体标记" class="headerlink" title="&lt;body&gt;主体标记"></a>&lt;body&gt;主体标记</h4><ul>
+<li>用于定义HTML文档所要显示的内容。</li>
+<li>一个HTML文档只能含有一对&lt;body&gt;标记，且&lt;body&gt;标记必须在&lt;html&gt;标记内，位于&lt;head&gt;头部标记之后，与&lt;head&gt;标记是并列关系。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><h3 id="HTML标记"><a href="#HTML标记" class="headerlink" title="HTML标记"></a>HTML标记</h3><ul>
+<li><h4 id="单标记：-lt-标记名-gt"><a href="#单标记：-lt-标记名-gt" class="headerlink" title="单标记：&lt;标记名 /&gt;"></a>单标记：&lt;标记名 /&gt;</h4></li>
+<li><h4 id="双标记：-lt-标记名-gt-内容-lt-标记名-gt"><a href="#双标记：-lt-标记名-gt-内容-lt-标记名-gt" class="headerlink" title="双标记：&lt;标记名&gt;内容&lt;/标记名&gt;"></a>双标记：&lt;标记名&gt;内容&lt;/标记名&gt;</h4></li>
+<li><h4 id="注释标记：-lt-–注释语句–-gt"><a href="#注释标记：-lt-–注释语句–-gt" class="headerlink" title="注释标记：&lt;!–注释语句–&gt;"></a>注释标记：&lt;!–注释语句–&gt;</h4></li>
+</ul>
+</li>
+<li><h3 id="标记的属性"><a href="#标记的属性" class="headerlink" title="标记的属性"></a>标记的属性</h3><ul>
+<li><h4 id="基本语法格式如下：-lt-标记名-属性1-”属性值1”-属性2-”属性值2”-…-gt-内容-lt-标记名-gt"><a href="#基本语法格式如下：-lt-标记名-属性1-”属性值1”-属性2-”属性值2”-…-gt-内容-lt-标记名-gt" class="headerlink" title="基本语法格式如下：&lt;标记名 属性1=”属性值1” 属性2=”属性值2” …&gt;内容&lt;/标记名&gt;"></a>基本语法格式如下：&lt;标记名 属性1=”属性值1” 属性2=”属性值2” …&gt;内容&lt;/标记名&gt;</h4></li>
+</ul>
+</li>
+<li><h3 id="HTML文档头部相关标记"><a href="#HTML文档头部相关标记" class="headerlink" title="HTML文档头部相关标记"></a>HTML文档头部相关标记</h3><ul>
+<li><h4 id="设置页面标题标记-lt-title-gt-，基本语法格式如下：-lt-title-gt-网页标题名称-lt-title-gt"><a href="#设置页面标题标记-lt-title-gt-，基本语法格式如下：-lt-title-gt-网页标题名称-lt-title-gt" class="headerlink" title="设置页面标题标记&lt;title&gt;，基本语法格式如下：&lt;title&gt;网页标题名称&lt;/title&gt;"></a>设置页面标题标记&lt;title&gt;，基本语法格式如下：&lt;title&gt;网页标题名称&lt;/title&gt;</h4></li>
+<li><h4 id="定义页面元信息标记-lt-meta-gt"><a href="#定义页面元信息标记-lt-meta-gt" class="headerlink" title="定义页面元信息标记&lt;meta /&gt;"></a>定义页面元信息标记&lt;meta /&gt;</h4><ul>
+<li>&lt;meta name=”名称” content=”值” /&gt;<ul>
+<li>设置网页关键字：其中name属性的值为keywords，用于定义搜索内容名称为网页关键字，content属性的值用于定义关键字的具体内容，多个关键字内容之间可以用”,”分隔。</li>
+<li>设置网页描述：其中name属性的值为description，用于定义搜索内容名称为网页描述，content属性的值用于定义描述的具体内容。需要注意的是网页描述的文字不必过多。</li>
+<li>设置网页作者：其中name属性的值为author，用于定义搜索内容名称为网页作者，content属性的值用于定义具体的作者信息。</li>
+</ul>
+</li>
+<li>&lt;meta http-equiv=”名称” content=”值” /&gt;<ul>
+<li>在&lt;meta&gt;标记中使用http-equiv/content属性可以设置服务器发送给浏览器的HTTP头部信息，为浏览器显示该页面提供相关的参数。其中，http-equiv属性提供参数类型，content属性提供对应的参数值。默认会发送&lt;meta http-equiv=”Content-Type” content=”text/html” /&gt;，通知浏览器发送的文件类型是HTML。具体应用如下。<ul>
+<li>设置字符集,例如传智播客官网字符集的设置:&lt;meta http-equiv=”Content-Type” content=”text/html;charset=utf-8” /&gt;,其中http-equiv属性的值为Content-Type,content属性的值为text/html和charset=utf-8,中间用”;”隔开,用于说明当前文档类型为HTML,字符集为utf-8(国际化编码,是目前最常用的字符集编码方式,常用的字符集编码方式还有gbk和gb2312)。</li>
+<li>设置页面自动刷新与跳转,例如定义某个页面10秒后跳转至传智播客官网:&lt;meta http-equiv=”refresh” content=”10;url=<a target="_blank" rel="noopener" href="http://www.itcast.cn&quot;/">http://www.itcast.cn&quot;</a> /&gt;,其中http-equiv属性的值为refresh,content属性的值为数值和url地址,中间用”;”隔开,用于指定在特定的时间后跳转至目标页面,该时间默认以秒为单位。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><h4 id="引用外部文件标记-lt-link-gt"><a href="#引用外部文件标记-lt-link-gt" class="headerlink" title="引用外部文件标记&lt;link&gt;"></a>引用外部文件标记&lt;link&gt;</h4></li>
+<li><h4 id="内嵌样式标记-lt-style-gt"><a href="#内嵌样式标记-lt-style-gt" class="headerlink" title="内嵌样式标记&lt;style&gt;"></a>内嵌样式标记&lt;style&gt;</h4><ul>
+<li>&lt;style&gt;标记用于为HTML文档定义样式信息,位于&lt;head&gt;头部标记中。在HTML中使用style标记时,常常定义其属性为type,相应的属性值为text/css,表示使用内嵌式的CSS样式。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><h2 id="HTML文本控制标记"><a href="#HTML文本控制标记" class="headerlink" title="HTML文本控制标记"></a>HTML文本控制标记</h2><ul>
+<li><h3 id="标题和段落标记"><a href="#标题和段落标记" class="headerlink" title="标题和段落标记"></a>标题和段落标记</h3><ul>
+<li><h4 id="标题标记"><a href="#标题标记" class="headerlink" title="标题标记"></a>标题标记</h4><ul>
+<li>基本语法格式:&lt;hn align=”对齐方式”&gt;标题文本&lt;/hn&gt;<ul>
+<li>n取值为1到6</li>
+<li>align为可选属性,用于指定标题的对齐方式。<ul>
+<li>left:左对齐(默认)</li>
+<li>center:居中对齐</li>
+<li>right:右对齐</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>注意<ul>
+<li>一个页面中只能有一个&lt;h1&gt;标记,常常用于网站的logo部分</li>
+<li>h元素拥有确切的语义,初学者禁止仅仅使用h标记设置文字加粗或更改文字的大小</li>
+<li>XHTML不赞成使用h标记的align对齐属性,可使用style属性或通过CSS设置</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><h4 id="段落标记"><a href="#段落标记" class="headerlink" title="段落标记"></a>段落标记</h4><ul>
+<li>基本语法格式:&lt;p align=”对齐方式”&gt;段落文本&lt;/p&gt;</li>
+</ul>
+</li>
+<li><h4 id="水平线标记-lt-hr-gt"><a href="#水平线标记-lt-hr-gt" class="headerlink" title="水平线标记&lt;hr /&gt;"></a>水平线标记&lt;hr /&gt;</h4><ul>
+<li><p>基本语法格式:&lt;hr 属性=”属性值” /&gt;</p>
+</li>
+<li><p>常用属性</p>
+<table>
+<thead>
+<tr>
+<th>属性名</th>
+<th>含义</th>
+<th>属性值</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>align</td>
+<td>设置水平线的对齐方式</td>
+<td>left、right、center(默认)</td>
+</tr>
+<tr>
+<td>size</td>
+<td>设置水平线的粗细</td>
+<td>以像素为单位,默认为2像素</td>
+</tr>
+<tr>
+<td>color</td>
+<td>设置水平线的颜色</td>
+<td>可用颜色名称、16进制#RGB、rgb(r,g,b)</td>
+</tr>
+<tr>
+<td>width</td>
+<td>设置水平线的宽度</td>
+<td>可以是确定的像素值,也可以是浏览器窗口的百分比,默认为100%</td>
+</tr>
+</tbody></table>
+</li>
+</ul>
+</li>
+<li><h4 id="换行标记-lt-br-gt"><a href="#换行标记-lt-br-gt" class="headerlink" title="换行标记&lt;br /&gt;"></a>换行标记&lt;br /&gt;</h4></li>
+</ul>
+</li>
+<li><h3 id="文本样式标记-font"><a href="#文本样式标记-font" class="headerlink" title="文本样式标记(font)"></a>文本样式标记(font)</h3><ul>
+<li><h4 id="基本语法格式-lt-font-属性-”属性值”-gt-文本内容-lt-font-gt"><a href="#基本语法格式-lt-font-属性-”属性值”-gt-文本内容-lt-font-gt" class="headerlink" title="基本语法格式:&lt;font 属性=”属性值”&gt;文本内容&lt;/font&gt;"></a>基本语法格式:&lt;font 属性=”属性值”&gt;文本内容&lt;/font&gt;</h4></li>
+<li><h4 id="常用属性"><a href="#常用属性" class="headerlink" title="常用属性"></a>常用属性</h4><table>
+<thead>
+<tr>
+<th>属性名</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>face</td>
+<td>设置文字的字体</td>
+</tr>
+<tr>
+<td>size</td>
+<td>设置文字的大小,可以取1到7之间的整数值</td>
+</tr>
+<tr>
+<td>color</td>
+<td>设置文字的颜色</td>
+</tr>
+</tbody></table>
+</li>
+<li><h4 id="注意-XHTML不赞成使用-lt-font-gt-标记-可使用CSS样式来定义文本的字体、大小和颜色"><a href="#注意-XHTML不赞成使用-lt-font-gt-标记-可使用CSS样式来定义文本的字体、大小和颜色" class="headerlink" title="注意:XHTML不赞成使用&lt;font&gt;标记,可使用CSS样式来定义文本的字体、大小和颜色"></a>注意:XHTML不赞成使用&lt;font&gt;标记,可使用CSS样式来定义文本的字体、大小和颜色</h4></li>
+</ul>
+</li>
+<li><h3 id="文本格式化标记"><a href="#文本格式化标记" class="headerlink" title="文本格式化标记"></a>文本格式化标记</h3><ul>
+<li><h4 id="常用文本格式化标记"><a href="#常用文本格式化标记" class="headerlink" title="常用文本格式化标记"></a>常用文本格式化标记</h4><table>
+<thead>
+<tr>
+<th>标记</th>
+<th>显示效果</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>&lt;b&gt;&lt;/b&gt;和&lt;strong&gt;&lt;/strong&gt;</td>
+<td>文字以粗体方式显示(XHTML推荐使用strong)</td>
+</tr>
+<tr>
+<td>&lt;i&gt;&lt;/i&gt;和&lt;em&gt;&lt;/em&gt;</td>
+<td>文字以斜体方式显示(XHTML推荐使用em)</td>
+</tr>
+<tr>
+<td>&lt;s&gt;&lt;/s&gt;和&lt;del&gt;&lt;/del&gt;</td>
+<td>文字以加删除线方式显示(XHTML推荐使用del)</td>
+</tr>
+<tr>
+<td>&lt;u&gt;&lt;/u&gt;和&lt;ins&gt;&lt;/ins&gt;</td>
+<td>文字以加下划线方式显示(XHTML不赞成使用u)</td>
+</tr>
+</tbody></table>
+</li>
+</ul>
+</li>
+<li><h3 id="特殊字符标记"><a href="#特殊字符标记" class="headerlink" title="特殊字符标记"></a>特殊字符标记</h3><ul>
+<li><h4 id="常用特殊字符的表示"><a href="#常用特殊字符的表示" class="headerlink" title="常用特殊字符的表示"></a>常用特殊字符的表示</h4><table>
+<thead>
+<tr>
+<th>特殊字符</th>
+<th>字符的代码</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td>&amp;nbsp;</td>
+</tr>
+<tr>
+<td>&lt;</td>
+<td>&amp;lt;</td>
+</tr>
+<tr>
+<td>&gt;</td>
+<td>&amp;gt;</td>
+</tr>
+<tr>
+<td>&amp;</td>
+<td>&amp;amp;</td>
+</tr>
+<tr>
+<td>&yen;</td>
+<td>&amp;yen;</td>
+</tr>
+<tr>
+<td>&copy;</td>
+<td>&amp;copy;</td>
+</tr>
+<tr>
+<td>&reg;</td>
+<td>&amp;reg;</td>
+</tr>
+<tr>
+<td>&deg;</td>
+<td>&amp;deg;</td>
+</tr>
+<tr>
+<td>&plusmn;</td>
+<td>&amp;plusmn;</td>
+</tr>
+<tr>
+<td>&times;</td>
+<td>&amp;times;</td>
+</tr>
+<tr>
+<td>&divide;</td>
+<td>&amp;divide;</td>
+</tr>
+<tr>
+<td>&sup2;</td>
+<td>&amp;sup2;</td>
+</tr>
+<tr>
+<td>&sup3;</td>
+<td>&amp;sup3;</td>
+</tr>
+</tbody></table>
+</li>
+<li><h4 id="注意-浏览器对空格符的解析是有差异的-导致了使用空格符的页面在各个浏览器中显示效果的不同-因此不推荐使用-可使用CSS样式替代"><a href="#注意-浏览器对空格符的解析是有差异的-导致了使用空格符的页面在各个浏览器中显示效果的不同-因此不推荐使用-可使用CSS样式替代" class="headerlink" title="注意:浏览器对空格符的解析是有差异的,导致了使用空格符的页面在各个浏览器中显示效果的不同,因此不推荐使用,可使用CSS样式替代"></a>注意:浏览器对空格符的解析是有差异的,导致了使用空格符的页面在各个浏览器中显示效果的不同,因此不推荐使用,可使用CSS样式替代</h4></li>
+</ul>
+</li>
+<li><h3 id="lt-div-gt-标记-之后细讲"><a href="#lt-div-gt-标记-之后细讲" class="headerlink" title="&lt;div&gt;标记(之后细讲)"></a>&lt;div&gt;标记(之后细讲)</h3></li>
+</ul>
+</li>
+<li><h2 id="HTML图像标记"><a href="#HTML图像标记" class="headerlink" title="HTML图像标记"></a>HTML图像标记</h2><ul>
+<li><h3 id="常用图像格式"><a href="#常用图像格式" class="headerlink" title="常用图像格式"></a>常用图像格式</h3><ul>
+<li><h4 id="GIF-GIF支持动画-是一种无损的图像格式-支持透明-全透明或全不透明-因此很适合在互联网上使用-但GIF只能处理256种颜色-在网页制作中-GIF格式常常用于logo-小图标及其他颜色相对单一的图像"><a href="#GIF-GIF支持动画-是一种无损的图像格式-支持透明-全透明或全不透明-因此很适合在互联网上使用-但GIF只能处理256种颜色-在网页制作中-GIF格式常常用于logo-小图标及其他颜色相对单一的图像" class="headerlink" title="GIF:GIF支持动画,是一种无损的图像格式.支持透明(全透明或全不透明),因此很适合在互联网上使用.但GIF只能处理256种颜色.在网页制作中,GIF格式常常用于logo,小图标及其他颜色相对单一的图像."></a>GIF:GIF支持动画,是一种无损的图像格式.支持透明(全透明或全不透明),因此很适合在互联网上使用.但GIF只能处理256种颜色.在网页制作中,GIF格式常常用于logo,小图标及其他颜色相对单一的图像.</h4></li>
+<li><h4 id="PNG-PNG包括PNG-8和真色彩PNG-PNG-24和PNG-32-相当于GIF-PNG最大的优势是体积更小-支持alpha透明-全透明-半透明-全不透明-并且颜色过滤更平滑-但PNG不支持动画-其中PNG-8和GIF类似-只能支持256种颜色-如果做静态图可以取代GIF-而真色彩PNG可以支持更多的颜色-同时真色彩PNG-PNG-32-支持半透明效果的处理"><a href="#PNG-PNG包括PNG-8和真色彩PNG-PNG-24和PNG-32-相当于GIF-PNG最大的优势是体积更小-支持alpha透明-全透明-半透明-全不透明-并且颜色过滤更平滑-但PNG不支持动画-其中PNG-8和GIF类似-只能支持256种颜色-如果做静态图可以取代GIF-而真色彩PNG可以支持更多的颜色-同时真色彩PNG-PNG-32-支持半透明效果的处理" class="headerlink" title="PNG:PNG包括PNG-8和真色彩PNG(PNG-24和PNG-32).相当于GIF,PNG最大的优势是体积更小,支持alpha透明(全透明,半透明,全不透明),并且颜色过滤更平滑,但PNG不支持动画.其中PNG-8和GIF类似,只能支持256种颜色,如果做静态图可以取代GIF,而真色彩PNG可以支持更多的颜色,同时真色彩PNG(PNG-32)支持半透明效果的处理."></a>PNG:PNG包括PNG-8和真色彩PNG(PNG-24和PNG-32).相当于GIF,PNG最大的优势是体积更小,支持alpha透明(全透明,半透明,全不透明),并且颜色过滤更平滑,但PNG不支持动画.其中PNG-8和GIF类似,只能支持256种颜色,如果做静态图可以取代GIF,而真色彩PNG可以支持更多的颜色,同时真色彩PNG(PNG-32)支持半透明效果的处理.</h4></li>
+<li><h4 id="JPG-JPG所能显示的颜色比GIF和PNG要多很多-可以用来保存超过256种颜色的图像-但是JPG是一种有损压缩的图像格式-JPG是特别为照片图像设计的文件格式-网页制作过程中类似于照片的图像都可以保存为JPG格式"><a href="#JPG-JPG所能显示的颜色比GIF和PNG要多很多-可以用来保存超过256种颜色的图像-但是JPG是一种有损压缩的图像格式-JPG是特别为照片图像设计的文件格式-网页制作过程中类似于照片的图像都可以保存为JPG格式" class="headerlink" title="JPG:JPG所能显示的颜色比GIF和PNG要多很多,可以用来保存超过256种颜色的图像,但是JPG是一种有损压缩的图像格式.JPG是特别为照片图像设计的文件格式,网页制作过程中类似于照片的图像都可以保存为JPG格式."></a>JPG:JPG所能显示的颜色比GIF和PNG要多很多,可以用来保存超过256种颜色的图像,但是JPG是一种有损压缩的图像格式.JPG是特别为照片图像设计的文件格式,网页制作过程中类似于照片的图像都可以保存为JPG格式.</h4></li>
+<li><h4 id="简而言之-在网页中小图片或网页基本元素-如图标-按钮等-考虑GIF或PNG-8-半透明图像考虑PNG-类似照片的图像则考虑JPG"><a href="#简而言之-在网页中小图片或网页基本元素-如图标-按钮等-考虑GIF或PNG-8-半透明图像考虑PNG-类似照片的图像则考虑JPG" class="headerlink" title="简而言之,在网页中小图片或网页基本元素(如图标,按钮等)考虑GIF或PNG-8,半透明图像考虑PNG,类似照片的图像则考虑JPG."></a>简而言之,在网页中小图片或网页基本元素(如图标,按钮等)考虑GIF或PNG-8,半透明图像考虑PNG,类似照片的图像则考虑JPG.</h4></li>
+</ul>
+</li>
+<li><h3 id="图像标记"><a href="#图像标记" class="headerlink" title="图像标记"></a>图像标记</h3><ul>
+<li><h4 id="基本语法格式：-lt-img-src-”图像URL”-gt"><a href="#基本语法格式：-lt-img-src-”图像URL”-gt" class="headerlink" title="基本语法格式：&lt;img src=”图像URL”/&gt;"></a>基本语法格式：&lt;img src=”图像URL”/&gt;</h4></li>
+<li><h4 id="lt-img-gt-标记的属性"><a href="#lt-img-gt-标记的属性" class="headerlink" title="&lt;img /&gt;标记的属性"></a>&lt;img /&gt;标记的属性</h4><table>
+<thead>
+<tr>
+<th align="center">属性</th>
+<th align="center">属性值</th>
+<th align="center">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">src</td>
+<td align="center">URL</td>
+<td align="center">图像的路径</td>
+</tr>
+<tr>
+<td align="center">alt</td>
+<td align="center">文本</td>
+<td align="center">图像不能显示时的替换文本（各浏览器对alt属性的解析不同）</td>
+</tr>
+<tr>
+<td align="center">title</td>
+<td align="center">文本</td>
+<td align="center">鼠标悬停时显示的内容</td>
+</tr>
+<tr>
+<td align="center">width</td>
+<td align="center">像素</td>
+<td align="center">设置图像的宽度</td>
+</tr>
+<tr>
+<td align="center">height</td>
+<td align="center">像素</td>
+<td align="center">设置图像的高度</td>
+</tr>
+<tr>
+<td align="center">border</td>
+<td align="center">数字</td>
+<td align="center">设置图像边框的宽度</td>
+</tr>
+<tr>
+<td align="center">vspace</td>
+<td align="center">像素</td>
+<td align="center">设置图像顶部和底部的空白（垂直边距）</td>
+</tr>
+<tr>
+<td align="center">hspace</td>
+<td align="center">像素</td>
+<td align="center">设置图像左侧和右侧的空白（水平边距）</td>
+</tr>
+<tr>
+<td align="center">align</td>
+<td align="center">left</td>
+<td align="center">将图像对齐到左边</td>
+</tr>
+<tr>
+<td align="center">align</td>
+<td align="center">right</td>
+<td align="center">将图像对齐到右边</td>
+</tr>
+<tr>
+<td align="center">align</td>
+<td align="center">top</td>
+<td align="center">将图像的顶端和文本的第一行文字对齐，其他文字居图像下方</td>
+</tr>
+<tr>
+<td align="center">align</td>
+<td align="center">middle</td>
+<td align="center">将图像的水平中线和文本的第一行文字对齐，其他文字居图像下方</td>
+</tr>
+<tr>
+<td align="center">align</td>
+<td align="center">bottom</td>
+<td align="center">将图像的底部和文本的第一行文字对齐，其他文字居图像下方</td>
+</tr>
+</tbody></table>
+</li>
+<li><h4 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h4><ul>
+<li>XHTML不赞成图像标记&lt;img /&gt;使用border、vspace、hspace及align属性，可用CSS样式代替。</li>
+<li>网页制作中，装饰性的图像一般不直接适应&lt;img /&gt;标记，而是通过CSS设置背景图像来实现。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><h3 id="相对路径与绝对路径"><a href="#相对路径与绝对路径" class="headerlink" title="相对路径与绝对路径"></a>相对路径与绝对路径</h3><ul>
+<li><h4 id="绝对路径"><a href="#绝对路径" class="headerlink" title="绝对路径"></a>绝对路径</h4><ul>
+<li>绝对路径就是网页上的文件或目录在硬盘上的真正路径，或完整的网络地址。</li>
+</ul>
+</li>
+<li><h4 id="相对路径"><a href="#相对路径" class="headerlink" title="相对路径"></a>相对路径</h4><ul>
+<li>相对路径就是相对于当前文件的路径，相对路径不带有盘符，通常是以HTML网页文件为起点，通过层级关系描述目标图像的位置。总结起来，相对路径的设置分为以下3种。<ul>
+<li>图像文件和html文件位于同一文件夹：只需输入图像文件的名称即可，如：&lt;img src=”logo.gif” /&gt;。</li>
+<li>图像文件位于html文件的下一级文件夹：输入文件夹名和文件名，之间用“/”隔开，如&lt;img src=”img/img01/logo.gif” /&gt;。</li>
+<li>图像文件位于html文件的上一级文件夹：在文件名之前加入“../”，如果是上两级，则需要使用“../../”，以此类推，如&lt;img src=”../logo.gif” /&gt;。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我喝奶茶!😊<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="https://cdn.jsdelivr.net/gh/tnnnnt/picgo/img/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20210413230757.jpg">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="https://cdn.jsdelivr.net/gh/tnnnnt/picgo/img/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20210413231231.png">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+<span id="busuanzi_container_page_pv">
+                本文总阅读量<span id="busuanzi_value_page_pv"></span>次
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">Markdown</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">网页</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">文本编辑器</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">HTML</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">学习工具</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Dreamweaver</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2021/05/04/HTML%E5%9F%BA%E7%A1%80/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2021/04/13/hello-world/" class="archive-article-date">
-  	<time datetime="2021-04-13T13:50:15.463Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-04-13</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2021/04/28/JAVA%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95-%E6%A0%87%E8%AF%86%E7%AC%A6/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">JAVA基础语法-标识符</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/04/13/hello-world/">Hello World</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Hexo</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AE%A4%E8%AF%86HTML"><span class="toc-number">1.</span> <span class="toc-text">认识HTML</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#HTML%E6%96%87%E6%A1%A3%E5%9F%BA%E6%9C%AC%E6%A0%BC%E5%BC%8F%EF%BC%88%E4%BA%86%E8%A7%A3%E5%8D%B3%E5%8F%AF%EF%BC%89"><span class="toc-number">1.1.</span> <span class="toc-text">HTML文档基本格式（了解即可）</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#lt-DOCTYPE-gt-%E6%96%87%E6%A1%A3%E7%B1%BB%E5%9E%8B%E5%A3%B0%E6%98%8E"><span class="toc-number">1.1.1.</span> <span class="toc-text">&lt;!DOCTYPE&gt;文档类型声明</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#lt-html-gt-%E6%A0%B9%E6%A0%87%E8%AE%B0"><span class="toc-number">1.1.2.</span> <span class="toc-text">&lt;html&gt;根标记</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#lt-head-gt-%E5%A4%B4%E9%83%A8%E6%A0%87%E8%AE%B0"><span class="toc-number">1.1.3.</span> <span class="toc-text">&lt;head&gt;头部标记</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#lt-body-gt-%E4%B8%BB%E4%BD%93%E6%A0%87%E8%AE%B0"><span class="toc-number">1.1.4.</span> <span class="toc-text">&lt;body&gt;主体标记</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#HTML%E6%A0%87%E8%AE%B0"><span class="toc-number">1.2.</span> <span class="toc-text">HTML标记</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8D%95%E6%A0%87%E8%AE%B0%EF%BC%9A-lt-%E6%A0%87%E8%AE%B0%E5%90%8D-gt"><span class="toc-number">1.2.1.</span> <span class="toc-text">单标记：&lt;标记名 &#x2F;&gt;</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8F%8C%E6%A0%87%E8%AE%B0%EF%BC%9A-lt-%E6%A0%87%E8%AE%B0%E5%90%8D-gt-%E5%86%85%E5%AE%B9-lt-%E6%A0%87%E8%AE%B0%E5%90%8D-gt"><span class="toc-number">1.2.2.</span> <span class="toc-text">双标记：&lt;标记名&gt;内容&lt;&#x2F;标记名&gt;</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%B3%A8%E9%87%8A%E6%A0%87%E8%AE%B0%EF%BC%9A-lt-%E2%80%93%E6%B3%A8%E9%87%8A%E8%AF%AD%E5%8F%A5%E2%80%93-gt"><span class="toc-number">1.2.3.</span> <span class="toc-text">注释标记：&lt;!–注释语句–&gt;</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%A0%87%E8%AE%B0%E7%9A%84%E5%B1%9E%E6%80%A7"><span class="toc-number">1.3.</span> <span class="toc-text">标记的属性</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95%E6%A0%BC%E5%BC%8F%E5%A6%82%E4%B8%8B%EF%BC%9A-lt-%E6%A0%87%E8%AE%B0%E5%90%8D-%E5%B1%9E%E6%80%A71-%E2%80%9D%E5%B1%9E%E6%80%A7%E5%80%BC1%E2%80%9D-%E5%B1%9E%E6%80%A72-%E2%80%9D%E5%B1%9E%E6%80%A7%E5%80%BC2%E2%80%9D-%E2%80%A6-gt-%E5%86%85%E5%AE%B9-lt-%E6%A0%87%E8%AE%B0%E5%90%8D-gt"><span class="toc-number">1.3.1.</span> <span class="toc-text">基本语法格式如下：&lt;标记名 属性1&#x3D;”属性值1” 属性2&#x3D;”属性值2” …&gt;内容&lt;&#x2F;标记名&gt;</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#HTML%E6%96%87%E6%A1%A3%E5%A4%B4%E9%83%A8%E7%9B%B8%E5%85%B3%E6%A0%87%E8%AE%B0"><span class="toc-number">1.4.</span> <span class="toc-text">HTML文档头部相关标记</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%AE%BE%E7%BD%AE%E9%A1%B5%E9%9D%A2%E6%A0%87%E9%A2%98%E6%A0%87%E8%AE%B0-lt-title-gt-%EF%BC%8C%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95%E6%A0%BC%E5%BC%8F%E5%A6%82%E4%B8%8B%EF%BC%9A-lt-title-gt-%E7%BD%91%E9%A1%B5%E6%A0%87%E9%A2%98%E5%90%8D%E7%A7%B0-lt-title-gt"><span class="toc-number">1.4.1.</span> <span class="toc-text">设置页面标题标记&lt;title&gt;，基本语法格式如下：&lt;title&gt;网页标题名称&lt;&#x2F;title&gt;</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AE%9A%E4%B9%89%E9%A1%B5%E9%9D%A2%E5%85%83%E4%BF%A1%E6%81%AF%E6%A0%87%E8%AE%B0-lt-meta-gt"><span class="toc-number">1.4.2.</span> <span class="toc-text">定义页面元信息标记&lt;meta &#x2F;&gt;</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%BC%95%E7%94%A8%E5%A4%96%E9%83%A8%E6%96%87%E4%BB%B6%E6%A0%87%E8%AE%B0-lt-link-gt"><span class="toc-number">1.4.3.</span> <span class="toc-text">引用外部文件标记&lt;link&gt;</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%86%85%E5%B5%8C%E6%A0%B7%E5%BC%8F%E6%A0%87%E8%AE%B0-lt-style-gt"><span class="toc-number">1.4.4.</span> <span class="toc-text">内嵌样式标记&lt;style&gt;</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#HTML%E6%96%87%E6%9C%AC%E6%8E%A7%E5%88%B6%E6%A0%87%E8%AE%B0"><span class="toc-number">2.</span> <span class="toc-text">HTML文本控制标记</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%A0%87%E9%A2%98%E5%92%8C%E6%AE%B5%E8%90%BD%E6%A0%87%E8%AE%B0"><span class="toc-number">2.1.</span> <span class="toc-text">标题和段落标记</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%A0%87%E9%A2%98%E6%A0%87%E8%AE%B0"><span class="toc-number">2.1.1.</span> <span class="toc-text">标题标记</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%AE%B5%E8%90%BD%E6%A0%87%E8%AE%B0"><span class="toc-number">2.1.2.</span> <span class="toc-text">段落标记</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%B0%B4%E5%B9%B3%E7%BA%BF%E6%A0%87%E8%AE%B0-lt-hr-gt"><span class="toc-number">2.1.3.</span> <span class="toc-text">水平线标记&lt;hr &#x2F;&gt;</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%8D%A2%E8%A1%8C%E6%A0%87%E8%AE%B0-lt-br-gt"><span class="toc-number">2.1.4.</span> <span class="toc-text">换行标记&lt;br &#x2F;&gt;</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%87%E6%9C%AC%E6%A0%B7%E5%BC%8F%E6%A0%87%E8%AE%B0-font"><span class="toc-number">2.2.</span> <span class="toc-text">文本样式标记(font)</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95%E6%A0%BC%E5%BC%8F-lt-font-%E5%B1%9E%E6%80%A7-%E2%80%9D%E5%B1%9E%E6%80%A7%E5%80%BC%E2%80%9D-gt-%E6%96%87%E6%9C%AC%E5%86%85%E5%AE%B9-lt-font-gt"><span class="toc-number">2.2.1.</span> <span class="toc-text">基本语法格式:&lt;font 属性&#x3D;”属性值”&gt;文本内容&lt;&#x2F;font&gt;</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8%E5%B1%9E%E6%80%A7"><span class="toc-number">2.2.2.</span> <span class="toc-text">常用属性</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%B3%A8%E6%84%8F-XHTML%E4%B8%8D%E8%B5%9E%E6%88%90%E4%BD%BF%E7%94%A8-lt-font-gt-%E6%A0%87%E8%AE%B0-%E5%8F%AF%E4%BD%BF%E7%94%A8CSS%E6%A0%B7%E5%BC%8F%E6%9D%A5%E5%AE%9A%E4%B9%89%E6%96%87%E6%9C%AC%E7%9A%84%E5%AD%97%E4%BD%93%E3%80%81%E5%A4%A7%E5%B0%8F%E5%92%8C%E9%A2%9C%E8%89%B2"><span class="toc-number">2.2.3.</span> <span class="toc-text">注意:XHTML不赞成使用&lt;font&gt;标记,可使用CSS样式来定义文本的字体、大小和颜色</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%87%E6%9C%AC%E6%A0%BC%E5%BC%8F%E5%8C%96%E6%A0%87%E8%AE%B0"><span class="toc-number">2.3.</span> <span class="toc-text">文本格式化标记</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8%E6%96%87%E6%9C%AC%E6%A0%BC%E5%BC%8F%E5%8C%96%E6%A0%87%E8%AE%B0"><span class="toc-number">2.3.1.</span> <span class="toc-text">常用文本格式化标记</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%89%B9%E6%AE%8A%E5%AD%97%E7%AC%A6%E6%A0%87%E8%AE%B0"><span class="toc-number">2.4.</span> <span class="toc-text">特殊字符标记</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8%E7%89%B9%E6%AE%8A%E5%AD%97%E7%AC%A6%E7%9A%84%E8%A1%A8%E7%A4%BA"><span class="toc-number">2.4.1.</span> <span class="toc-text">常用特殊字符的表示</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%B3%A8%E6%84%8F-%E6%B5%8F%E8%A7%88%E5%99%A8%E5%AF%B9%E7%A9%BA%E6%A0%BC%E7%AC%A6%E7%9A%84%E8%A7%A3%E6%9E%90%E6%98%AF%E6%9C%89%E5%B7%AE%E5%BC%82%E7%9A%84-%E5%AF%BC%E8%87%B4%E4%BA%86%E4%BD%BF%E7%94%A8%E7%A9%BA%E6%A0%BC%E7%AC%A6%E7%9A%84%E9%A1%B5%E9%9D%A2%E5%9C%A8%E5%90%84%E4%B8%AA%E6%B5%8F%E8%A7%88%E5%99%A8%E4%B8%AD%E6%98%BE%E7%A4%BA%E6%95%88%E6%9E%9C%E7%9A%84%E4%B8%8D%E5%90%8C-%E5%9B%A0%E6%AD%A4%E4%B8%8D%E6%8E%A8%E8%8D%90%E4%BD%BF%E7%94%A8-%E5%8F%AF%E4%BD%BF%E7%94%A8CSS%E6%A0%B7%E5%BC%8F%E6%9B%BF%E4%BB%A3"><span class="toc-number">2.4.2.</span> <span class="toc-text">注意:浏览器对空格符的解析是有差异的,导致了使用空格符的页面在各个浏览器中显示效果的不同,因此不推荐使用,可使用CSS样式替代</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#lt-div-gt-%E6%A0%87%E8%AE%B0-%E4%B9%8B%E5%90%8E%E7%BB%86%E8%AE%B2"><span class="toc-number">2.5.</span> <span class="toc-text">&lt;div&gt;标记(之后细讲)</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#HTML%E5%9B%BE%E5%83%8F%E6%A0%87%E8%AE%B0"><span class="toc-number">3.</span> <span class="toc-text">HTML图像标记</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8%E5%9B%BE%E5%83%8F%E6%A0%BC%E5%BC%8F"><span class="toc-number">3.1.</span> <span class="toc-text">常用图像格式</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#GIF-GIF%E6%94%AF%E6%8C%81%E5%8A%A8%E7%94%BB-%E6%98%AF%E4%B8%80%E7%A7%8D%E6%97%A0%E6%8D%9F%E7%9A%84%E5%9B%BE%E5%83%8F%E6%A0%BC%E5%BC%8F-%E6%94%AF%E6%8C%81%E9%80%8F%E6%98%8E-%E5%85%A8%E9%80%8F%E6%98%8E%E6%88%96%E5%85%A8%E4%B8%8D%E9%80%8F%E6%98%8E-%E5%9B%A0%E6%AD%A4%E5%BE%88%E9%80%82%E5%90%88%E5%9C%A8%E4%BA%92%E8%81%94%E7%BD%91%E4%B8%8A%E4%BD%BF%E7%94%A8-%E4%BD%86GIF%E5%8F%AA%E8%83%BD%E5%A4%84%E7%90%86256%E7%A7%8D%E9%A2%9C%E8%89%B2-%E5%9C%A8%E7%BD%91%E9%A1%B5%E5%88%B6%E4%BD%9C%E4%B8%AD-GIF%E6%A0%BC%E5%BC%8F%E5%B8%B8%E5%B8%B8%E7%94%A8%E4%BA%8Elogo-%E5%B0%8F%E5%9B%BE%E6%A0%87%E5%8F%8A%E5%85%B6%E4%BB%96%E9%A2%9C%E8%89%B2%E7%9B%B8%E5%AF%B9%E5%8D%95%E4%B8%80%E7%9A%84%E5%9B%BE%E5%83%8F"><span class="toc-number">3.1.1.</span> <span class="toc-text">GIF:GIF支持动画,是一种无损的图像格式.支持透明(全透明或全不透明),因此很适合在互联网上使用.但GIF只能处理256种颜色.在网页制作中,GIF格式常常用于logo,小图标及其他颜色相对单一的图像.</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#PNG-PNG%E5%8C%85%E6%8B%ACPNG-8%E5%92%8C%E7%9C%9F%E8%89%B2%E5%BD%A9PNG-PNG-24%E5%92%8CPNG-32-%E7%9B%B8%E5%BD%93%E4%BA%8EGIF-PNG%E6%9C%80%E5%A4%A7%E7%9A%84%E4%BC%98%E5%8A%BF%E6%98%AF%E4%BD%93%E7%A7%AF%E6%9B%B4%E5%B0%8F-%E6%94%AF%E6%8C%81alpha%E9%80%8F%E6%98%8E-%E5%85%A8%E9%80%8F%E6%98%8E-%E5%8D%8A%E9%80%8F%E6%98%8E-%E5%85%A8%E4%B8%8D%E9%80%8F%E6%98%8E-%E5%B9%B6%E4%B8%94%E9%A2%9C%E8%89%B2%E8%BF%87%E6%BB%A4%E6%9B%B4%E5%B9%B3%E6%BB%91-%E4%BD%86PNG%E4%B8%8D%E6%94%AF%E6%8C%81%E5%8A%A8%E7%94%BB-%E5%85%B6%E4%B8%ADPNG-8%E5%92%8CGIF%E7%B1%BB%E4%BC%BC-%E5%8F%AA%E8%83%BD%E6%94%AF%E6%8C%81256%E7%A7%8D%E9%A2%9C%E8%89%B2-%E5%A6%82%E6%9E%9C%E5%81%9A%E9%9D%99%E6%80%81%E5%9B%BE%E5%8F%AF%E4%BB%A5%E5%8F%96%E4%BB%A3GIF-%E8%80%8C%E7%9C%9F%E8%89%B2%E5%BD%A9PNG%E5%8F%AF%E4%BB%A5%E6%94%AF%E6%8C%81%E6%9B%B4%E5%A4%9A%E7%9A%84%E9%A2%9C%E8%89%B2-%E5%90%8C%E6%97%B6%E7%9C%9F%E8%89%B2%E5%BD%A9PNG-PNG-32-%E6%94%AF%E6%8C%81%E5%8D%8A%E9%80%8F%E6%98%8E%E6%95%88%E6%9E%9C%E7%9A%84%E5%A4%84%E7%90%86"><span class="toc-number">3.1.2.</span> <span class="toc-text">PNG:PNG包括PNG-8和真色彩PNG(PNG-24和PNG-32).相当于GIF,PNG最大的优势是体积更小,支持alpha透明(全透明,半透明,全不透明),并且颜色过滤更平滑,但PNG不支持动画.其中PNG-8和GIF类似,只能支持256种颜色,如果做静态图可以取代GIF,而真色彩PNG可以支持更多的颜色,同时真色彩PNG(PNG-32)支持半透明效果的处理.</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#JPG-JPG%E6%89%80%E8%83%BD%E6%98%BE%E7%A4%BA%E7%9A%84%E9%A2%9C%E8%89%B2%E6%AF%94GIF%E5%92%8CPNG%E8%A6%81%E5%A4%9A%E5%BE%88%E5%A4%9A-%E5%8F%AF%E4%BB%A5%E7%94%A8%E6%9D%A5%E4%BF%9D%E5%AD%98%E8%B6%85%E8%BF%87256%E7%A7%8D%E9%A2%9C%E8%89%B2%E7%9A%84%E5%9B%BE%E5%83%8F-%E4%BD%86%E6%98%AFJPG%E6%98%AF%E4%B8%80%E7%A7%8D%E6%9C%89%E6%8D%9F%E5%8E%8B%E7%BC%A9%E7%9A%84%E5%9B%BE%E5%83%8F%E6%A0%BC%E5%BC%8F-JPG%E6%98%AF%E7%89%B9%E5%88%AB%E4%B8%BA%E7%85%A7%E7%89%87%E5%9B%BE%E5%83%8F%E8%AE%BE%E8%AE%A1%E7%9A%84%E6%96%87%E4%BB%B6%E6%A0%BC%E5%BC%8F-%E7%BD%91%E9%A1%B5%E5%88%B6%E4%BD%9C%E8%BF%87%E7%A8%8B%E4%B8%AD%E7%B1%BB%E4%BC%BC%E4%BA%8E%E7%85%A7%E7%89%87%E7%9A%84%E5%9B%BE%E5%83%8F%E9%83%BD%E5%8F%AF%E4%BB%A5%E4%BF%9D%E5%AD%98%E4%B8%BAJPG%E6%A0%BC%E5%BC%8F"><span class="toc-number">3.1.3.</span> <span class="toc-text">JPG:JPG所能显示的颜色比GIF和PNG要多很多,可以用来保存超过256种颜色的图像,但是JPG是一种有损压缩的图像格式.JPG是特别为照片图像设计的文件格式,网页制作过程中类似于照片的图像都可以保存为JPG格式.</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%AE%80%E8%80%8C%E8%A8%80%E4%B9%8B-%E5%9C%A8%E7%BD%91%E9%A1%B5%E4%B8%AD%E5%B0%8F%E5%9B%BE%E7%89%87%E6%88%96%E7%BD%91%E9%A1%B5%E5%9F%BA%E6%9C%AC%E5%85%83%E7%B4%A0-%E5%A6%82%E5%9B%BE%E6%A0%87-%E6%8C%89%E9%92%AE%E7%AD%89-%E8%80%83%E8%99%91GIF%E6%88%96PNG-8-%E5%8D%8A%E9%80%8F%E6%98%8E%E5%9B%BE%E5%83%8F%E8%80%83%E8%99%91PNG-%E7%B1%BB%E4%BC%BC%E7%85%A7%E7%89%87%E7%9A%84%E5%9B%BE%E5%83%8F%E5%88%99%E8%80%83%E8%99%91JPG"><span class="toc-number">3.1.4.</span> <span class="toc-text">简而言之,在网页中小图片或网页基本元素(如图标,按钮等)考虑GIF或PNG-8,半透明图像考虑PNG,类似照片的图像则考虑JPG.</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9B%BE%E5%83%8F%E6%A0%87%E8%AE%B0"><span class="toc-number">3.2.</span> <span class="toc-text">图像标记</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95%E6%A0%BC%E5%BC%8F%EF%BC%9A-lt-img-src-%E2%80%9D%E5%9B%BE%E5%83%8FURL%E2%80%9D-gt"><span class="toc-number">3.2.1.</span> <span class="toc-text">基本语法格式：&lt;img src&#x3D;”图像URL”&#x2F;&gt;</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#lt-img-gt-%E6%A0%87%E8%AE%B0%E7%9A%84%E5%B1%9E%E6%80%A7"><span class="toc-number">3.2.2.</span> <span class="toc-text">&lt;img &#x2F;&gt;标记的属性</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%B3%A8%E6%84%8F"><span class="toc-number">3.2.3.</span> <span class="toc-text">注意</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%9B%B8%E5%AF%B9%E8%B7%AF%E5%BE%84%E4%B8%8E%E7%BB%9D%E5%AF%B9%E8%B7%AF%E5%BE%84"><span class="toc-number">3.3.</span> <span class="toc-text">相对路径与绝对路径</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%BB%9D%E5%AF%B9%E8%B7%AF%E5%BE%84"><span class="toc-number">3.3.1.</span> <span class="toc-text">绝对路径</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%9B%B8%E5%AF%B9%E8%B7%AF%E5%BE%84"><span class="toc-number">3.3.2.</span> <span class="toc-text">相对路径</span></a></li></ol></li></ol></li></ol>
+                    </div>
+                </span>
+            </div>
         </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
+        
+    </div>
+</aside>
+
+
+
+  
+  <div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="HTML基础" data-title="HTML基础" data-url="http://example.com/2021/05/04/HTML%E5%9F%BA%E7%A1%80/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"true"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
   
   
-    </div></section>
+  
+  <div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
+<script>
+  var cloudTieConfig = {
+    url: "http://example.com/2021/05/04/HTML%E5%9F%BA%E7%A1%80/", 
+    sourceId: "HTML基础",
+    productKey: "true",
+    target: "cloud-tie-wrapper"
+  };
+</script>
+<script src="//img1.cache.netease.com/f2e/tie/yun/sdk/loader.js"></script>
   
 
-    
-    <nav id="page-nav">
-      <a class="extend prev" rel="prev" href="/archives/">&amp;laquo; Prev</a><a class="page-number" href="/archives/">1</a><span class="page-number current">2</span>
-    </nav>
+  
+  <div id="SOHUCS" sid="HTML基础" ></div> 
+<script charset="utf-8" type="text/javascript" src="//changyan.sohu.com/upload/changyan.js" ></script>
+<script type="text/javascript">
+    window.changyan.api.config({
+        appid: "cyvpthIm3",
+        conf: "f5d012277db5591f64792f94206fbe67"
+    });
+</script>
+</script>
+  
+
+  
+    <section id="comments">
+      <div id="disqus_thread"></div>
+        <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'true'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a target="_blank" rel="noopener" href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </section>
+  
+
+  
+  <div id="gitment-ctn"></div> 
+<link rel="stylesheet" href="//imsun.github.io/gitment/style/default.css">
+<script src="//imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+var gitment = new Gitment({
+  id: "http://example.com/2021/05/04/HTML%E5%9F%BA%E7%A1%80/",
+  owner: '73168136',
+  repo: 'tnnnnt.github.io',
+  oauth: {
+    client_id: '2e460a9b1ec52065a3de',
+    client_secret: '508d25f37e19f052ed0e0c803fe7d5aaafc4c16b',
+  },
+})
+gitment.render('gitment-ctn')
+</script>
   
 
 
@@ -281,8 +821,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: true,
