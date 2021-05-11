@@ -6,14 +6,21 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>Tag: 学习工具 | Hexo</title>
+  <title>CSS基础 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/tags/%E5%AD%A6%E4%B9%A0%E5%B7%A5%E5%85%B7/index.html">
+  <meta name="description" content="CSS核心基础 CSS样式规则 其基本语法格式为：">
+<meta property="og:type" content="article">
+<meta property="og:title" content="CSS基础">
+<meta property="og:url" content="http://example.com/2021/05/09/CSS%E5%9F%BA%E7%A1%80/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="CSS核心基础 CSS样式规则 其基本语法格式为：">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2021-05-09T08:01:50.000Z">
+<meta property="article:modified_time" content="2021-05-11T16:19:12.345Z">
 <meta property="article:author" content="John Doe">
+<meta property="article:tag" content="css">
+<meta property="article:tag" content="dreamweaver">
+<meta property="article:tag" content="网页">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
@@ -148,68 +155,483 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-CSS基础" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2021" class="archive-year">2021</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2021/04/13/%E5%85%B3%E4%BA%8EMarkdown%E8%AF%AD%E6%B3%95%E7%9A%84%E7%B2%97%E7%95%A5%E5%AD%A6%E4%B9%A0/" class="archive-article-date">
-  	<time datetime="2021-04-13T14:48:59.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-04-13</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/04/13/%E5%85%B3%E4%BA%8EMarkdown%E8%AF%AD%E6%B3%95%E7%9A%84%E7%B2%97%E7%95%A5%E5%AD%A6%E4%B9%A0/">关于Markdown语法的粗略学习</a>
+    <h1 class="article-title" itemprop="name">
+      CSS基础
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2021/05/09/CSS%E5%9F%BA%E7%A1%80/" class="archive-article-date">
+  	<time datetime="2021-05-09T08:01:50.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-05-09</time>
+</a>
+        
+        
+          <span class="archive-article-date">
+            阅读量 <span id="busuanzi_value_page_pv"></span>
+          </span>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <hr>
+<ul>
+<li><h2 id="CSS核心基础"><a href="#CSS核心基础" class="headerlink" title="CSS核心基础"></a>CSS核心基础</h2><ul>
+<li><h4 id="CSS样式规则"><a href="#CSS样式规则" class="headerlink" title="CSS样式规则"></a>CSS样式规则</h4><ul>
+<li><p>其基本语法格式为：</p>
+<span id="more"></span>
+
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">选择器&#123;属性1:属性值1; 属性2:属性值2; 属性3:属性值3;&#125;</span><br></pre></td></tr></table></figure></li>
+<li><p>CSS样式中的选择器严格区分大小写，属性和值不区分大小写，按照书写习惯一般将“选择器、属性和值”都采用小写的方式</p>
+</li>
+<li><p>如果属性的值由多个单词组成且中间包含空格，则必须为这个属性值加上英文状态下的引号。例如：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">p&#123;font-family:&quot;Times New Roman&quot;;&#125;</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li><h4 id="引入CSS样式表"><a href="#引入CSS样式表" class="headerlink" title="引入CSS样式表"></a>引入CSS样式表</h4><ul>
+<li><p><strong>行内式</strong>（很少使用），基本语法格式为：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;标记名 style=&quot;属性1:属性值1; 属性2:属性值2; 属性3:属性值3;&quot;&gt;内容&lt;/标记名&gt;</span><br></pre></td></tr></table></figure></li>
+<li><p><strong>内嵌式</strong>，是将CSS代码集中写在HTML文档的&lt;head&gt;头部标记中，并且用style标记定义，其基本语法格式为：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">style</span> <span class="attr">type</span>=<span class="string">&quot;text/css&quot;</span>&gt;</span></span><br><span class="line"><span class="css">	选择器&#123;属性<span class="number">1</span>:属性值<span class="number">1</span>; 属性<span class="number">2</span>:属性值<span class="number">2</span>; 属性<span class="number">3</span>:属性值<span class="number">3</span>;&#125;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br></pre></td></tr></table></figure></li>
+<li><p><strong>链入式</strong>，基本语法格式为：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">href</span>=<span class="string">&quot;CSS文件的路径&quot;</span> <span class="attr">type</span>=<span class="string">&quot;text/css&quot;</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">//href：定义所链接外部样式表文件的URL</span><br><span class="line">//type：定义所链接文档的类型，在这里需要指定为“text/css”，表示链接的外部文件为CSS样式表</span><br><span class="line">//rel：定义当前文档与被链接文档之间的关系，在这里需要指定为“stylesheet”，表示被链接的文档是一个样式表文件</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li><h4 id="CSS基础选择器"><a href="#CSS基础选择器" class="headerlink" title="CSS基础选择器"></a>CSS基础选择器</h4><ul>
+<li><p><strong>标记选择器</strong>，是指用HTML标记名称作为选择器，按标记名称分类，为页面中某一类标记指定统一的CSS样式。其基本语法格式为：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">标记名&#123;属性1:属性值1; 属性2:属性值2; 属性3:属性值3;&#125;</span><br></pre></td></tr></table></figure></li>
+<li><p><strong>类选择器</strong>，使用“.”（英文点号）进行标识，后面紧跟类名，其基本语法格式为：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">.类名&#123;属性1:属性值1; 属性2:属性值2; 属性3:属性值3;&#125;</span><br><span class="line">//类名即为HTML元素的class属性值，大多数HTML元素都可以定义class属性</span><br><span class="line">//类名的第一个字符不能使用数字，并且严格区分大小写，一般采用小写的英文字符</span><br></pre></td></tr></table></figure></li>
+<li><p><strong>id选择器</strong>，使用“#”进行标识，后面紧跟id名，其基本语法格式为：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">#id名&#123;属性1:属性值1; 属性2:属性值2; 属性3:属性值3;&#125;</span><br><span class="line">//id名即为HTML元素的id属性值，大多数HTML元素都可以定义id属性，元素的id值是唯一的，只能对应文档中某一个具体的元素</span><br><span class="line">//同一个id可以应用于多个标记，浏览器并不报错，但是这种做法是不被允许的，因为JavaScript等脚本语言调用id时会出错</span><br><span class="line">//id选择器不支持像类选择器那样定义多个值，类似“id=&quot;bold font22&quot;”的写法是完全错误的</span><br></pre></td></tr></table></figure></li>
+<li><p><strong>通配符选择器</strong>，用“*”号表示，它是所有选择器中作用范围最广的，能匹配页面中所有的元素。其基本语法格式为：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">*&#123;属性1:属性值1; 属性2:属性值2; 属性3:属性值3;&#125;</span><br><span class="line">//例如下面的代码，使用通配符选择器定义CSS样式，清除所有HTML标记的默认边距。</span><br><span class="line">*&#123;</span><br><span class="line">	margin:0;	/*定义外边距*/</span><br><span class="line">	padding:0;	/*定义内边距*/</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><h2 id="CSS控制文本样式"><a href="#CSS控制文本样式" class="headerlink" title="CSS控制文本样式"></a>CSS控制文本样式</h2><ul>
+<li><h4 id="CSS字体样式属性"><a href="#CSS字体样式属性" class="headerlink" title="CSS字体样式属性"></a>CSS字体样式属性</h4><ul>
+<li><p><strong>font-size</strong>：字号大小</p>
+<table>
+<thead>
+<tr>
+<th align="center">相对长度单位</th>
+<th align="center">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">em</td>
+<td align="center">相对于当前对象内文本的字体尺寸</td>
+</tr>
+<tr>
+<td align="center">px</td>
+<td align="center">像素，最常用，推荐使用</td>
+</tr>
+<tr>
+<td align="center"><strong>绝对长度单位</strong></td>
+<td align="center"><strong>说明</strong></td>
+</tr>
+<tr>
+<td align="center">in</td>
+<td align="center">英寸</td>
+</tr>
+<tr>
+<td align="center">cm</td>
+<td align="center">厘米</td>
+</tr>
+<tr>
+<td align="center">mm</td>
+<td align="center">毫米</td>
+</tr>
+<tr>
+<td align="center">pt</td>
+<td align="center">点</td>
+</tr>
+</tbody></table>
+</li>
+<li><p><strong>font-family</strong>：字体</p>
+<ul>
+<li>可以同时指定多个字体，中间以逗号隔开，如果浏览器不支持第一个字体，则会尝试下一个，直到找到合适的字体</li>
+<li>各种字体之间必须用英文状态下的逗号隔开</li>
+<li>中文字体需要加英文状态下的引号，英文字体一般不需要加引号。当需要设置英文字体时，英文字体名必须位于中文字体名之前</li>
+<li>如果字体名中包含空格、#、&yen;等符号，则该字体必须加英文状态下的单引号或双引号</li>
+<li>尽量使用系统默认字体，保证在任何用户的浏览器中都能正确显示</li>
+</ul>
+</li>
+<li><p><strong>font-weight</strong>：字体粗细</p>
+<table>
+<thead>
+<tr>
+<th align="left">值</th>
+<th align="left">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">normal(常用)</td>
+<td align="left">默认值，定义标准的字符</td>
+</tr>
+<tr>
+<td align="left">bold(常用)</td>
+<td align="left">定义粗体字符</td>
+</tr>
+<tr>
+<td align="left">bolder</td>
+<td align="left">定义更粗的字符</td>
+</tr>
+<tr>
+<td align="left">lighter</td>
+<td align="left">定义更细的字符</td>
+</tr>
+<tr>
+<td align="left">100~900(100的整数倍)</td>
+<td align="left">定义由细到粗的字符，其中400等同于normal，700等同于bold，值越大字体越粗</td>
+</tr>
+</tbody></table>
+</li>
+<li><p><strong>font-variant</strong>：变体，其可用属性值如下：</p>
+<ul>
+<li>normal：默认值，浏览器会显示标准的字体</li>
+<li>small-caps：浏览器会显示小型大写的字体，即所有的小写字母均会转换为大写。但是所有使用小型大写字体的字母与其余文本相比，其字体尺寸更小</li>
+</ul>
+</li>
+<li><p><strong>font-style</strong>：字体风格，其可用属性值如下：</p>
+<ul>
+<li>normal：默认值，浏览器会显示标准的字体样式</li>
+<li>italic和oblique：斜体，两者无本质区别，但italic常用</li>
+</ul>
+</li>
+<li><p><strong>font</strong>：综合设置字体样式，其基本语法格式为：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">选择器&#123;font:font-style font-variant font-weight font-size/line-height font-family;&#125;</span><br><span class="line">//使用font属性时，必须按上面语法格式中的顺序书写，各个属性以空格隔开。其中line-height指的是行高，在后面将具体介绍，例如：</span><br><span class="line">p&#123;font:italic small-caps bold 30px/40px Arial,&quot;宋体&quot;;&#125;</span><br><span class="line">//其中不需要设置的属性可以省略（取默认值），但必须保留font-size和font-family属性，否则font属性将不起作用</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li><h4 id="CSS文本外观属性"><a href="#CSS文本外观属性" class="headerlink" title="CSS文本外观属性"></a>CSS文本外观属性</h4><ul>
+<li><strong>color</strong>：文本颜色，其取值方式如下：<ul>
+<li>预定义的颜色值，如red,green,blue等</li>
+<li>十六进制（最常用），如#FF0000，#FF6600，#29D794等</li>
+<li>RGB代码，如红色可以表示为rgb(255,0,0)或rgb(100%,0%,0%)</li>
+</ul>
+</li>
+<li><strong>letter-spacing</strong>：字间距，其属性值可为不同单位的数值，允许使用负值，默认值为normal</li>
+<li><strong>word-spacing</strong>：单词间距，其属性值可为不同单位的数值，允许使用负值，默认值为normal</li>
+<li><strong>line-height</strong>：行间距，常用的属性值单位有像素px、相对值em和百分比%</li>
+<li><strong>text-transform</strong>：文本转换，用于转换英文字符的大小写，其可用属性值如下：<ul>
+<li>none：不转换（默认值）</li>
+<li>capitalize：首字母大写</li>
+<li>uppercase：全部字符转换为大写</li>
+<li>lowercase：全部字符转换为小写</li>
+</ul>
+</li>
+<li><strong>text-decoration</strong>：文本装饰，可用属性值如下：<ul>
+<li>none：没有装饰（正常文本默认值）</li>
+<li>underline：下划线</li>
+<li>overline：上划线</li>
+<li>line-through：删除线</li>
+</ul>
+</li>
+<li><strong>text-align</strong>：水平对齐方式，其可用属性值如下：<ul>
+<li>left：左对齐（默认值）</li>
+<li>right：右对齐</li>
+<li>center：居中对齐</li>
+<li>注意<ul>
+<li>text-align属性仅适用于块级元素，对行内元素无效</li>
+<li>如果需要对图像设置水平对齐，可以为图像添加一个父标记，如&lt;p&gt;或&lt;div&gt;，然后对父标记应用text-align属性，即可实现图像的水平对齐</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>text-indent</strong>：首行缩进，其属性值可为不同单位的数值、em字符宽度的倍数、或相当于浏览器窗口宽度的百分比%，允许使用负值，建议使用em作为设置单位，text-indent属性仅适用于块级元素，对行内元素无效</li>
+<li><strong>white-space</strong>：空白符处理，其属性值如下：<ul>
+<li>normal：常规（默认值），文本中的空格、空内无效，满行（到达区域边界）后自动换行</li>
+<li>pre：预格式化，按文档的书写格式保留空格、空行原样显示</li>
+<li>nowrap：空格空行无效，强制文本不能换行，除非遇到换行标记&lt;br /&gt;。内容超出元素边界也不换行，若超出浏览器页面则会自动增加滚动条</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><h4 id="CSS定义背景颜色"><a href="#CSS定义背景颜色" class="headerlink" title="CSS定义背景颜色"></a>CSS定义背景颜色</h4><ul>
+<li>使用background-color属性来设置，其属性值与文本颜色的取值一样。其默认值为transparent，即背景透明，这时子元素会显示其父元素的背景</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><h2 id="CSS高级特性"><a href="#CSS高级特性" class="headerlink" title="CSS高级特性"></a>CSS高级特性</h2><ul>
+<li><h4 id="CSS复合选择器"><a href="#CSS复合选择器" class="headerlink" title="CSS复合选择器"></a>CSS复合选择器</h4><ul>
+<li><strong>标签指定式选择器</strong>，又称交集选择器，由两个选择器构成，其中第一个为标记选择器，第二个为class选择器或id选择器，两个选择器之间不能有空格，如 h3.special或p#one</li>
+<li><strong>后代选择器</strong>，用来选择元素或元素组的后代，其写法就是把外层标记写在前面，内层标记写在后面，中间用空格分隔。当标记发生嵌套时，内层标记就成为外层标记的后代。后代选择器不限于使用两个元素，如果需要加入更多的元素，只需在元素之间加上空格即可</li>
+<li><strong>并集选择器</strong>，是各个选择器通过逗号连接而成，任何形式的选择器（包括标记选择器、class类选择器、id选择器等），都可以作为并集选择器的一部分。如果某些选择器定义的样式完全相同或部分相同，就可以利用并集选择器为它们定义相同的CSS样式</li>
+</ul>
+</li>
+<li><h4 id="CSS层叠性与继承性"><a href="#CSS层叠性与继承性" class="headerlink" title="CSS层叠性与继承性"></a>CSS层叠性与继承性</h4><ul>
+<li><strong>层叠性</strong>，指多种CSS样式的叠加</li>
+<li><strong>继承性</strong>，指书写CSS样式表时，子标记会继承父标记的某些样式。以下属性不具有继承性：边框、外边距、内边距、背景、定位、布局、元素宽高</li>
+</ul>
+</li>
+<li><h4 id="CSS优先级"><a href="#CSS优先级" class="headerlink" title="CSS优先级"></a>CSS优先级</h4><ul>
+<li>定义CSS样式时，经常出现两个或更多规则应用在同一元素上，这时就会出现优先级的问题。CSS为每一种基础选择器都分配了一个权重，其中，标记选择器具有权重1，类选择器具有权重10，id选择器具有权重100。使用不同的选择器对同一个元素设置样式，浏览器会根据选择器的优先级规则解析CSS样式。对于由多个基础选择器构成的复合选择器（并集选择器除外），其权重为这些基础选择器权重的叠加</li>
+<li>继承样式的权重为0</li>
+<li>行内样式优先。应用style属性的元素，其行内样式的权重非常高，可以理解为远大于100。总之，它拥有比上面提到的选择器都大的优先级</li>
+<li>权重相同时，CSS遵循就近原则。也就是说靠近元素的样式具有最大的优先级，或者说排在最后的样式优先级最大</li>
+<li>CSS定义了一个!important命令，该命令被赋予最大的优先级。也就是说不管权重如何以及样式位置的远近，!important都具有最大优先级。注意：!important命令必须位于属性值和分号之间，否则无效</li>
+<li>复合选择器的权重无论为多少个类选择器和标记选择器的叠加，其权重都不会高于id选择器</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我喝奶茶!😊<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="https://cdn.jsdelivr.net/gh/tnnnnt/picgo/img/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20210413230757.jpg">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="https://cdn.jsdelivr.net/gh/tnnnnt/picgo/img/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20210413231231.png">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+<span id="busuanzi_container_page_pv">
+                本文总阅读量<span id="busuanzi_value_page_pv"></span>次
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">Markdown</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">css</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">文本编辑器</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">dreamweaver</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">学习工具</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">网页</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2021/05/09/CSS%E5%9F%BA%E7%A1%80/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
   
   
-    </div></section>
+    <a href="/2021/05/04/HTML%E5%9F%BA%E7%A1%80/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">HTML基础</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#CSS%E6%A0%B8%E5%BF%83%E5%9F%BA%E7%A1%80"><span class="toc-number">1.</span> <span class="toc-text">CSS核心基础</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#CSS%E6%A0%B7%E5%BC%8F%E8%A7%84%E5%88%99"><span class="toc-number">1.0.1.</span> <span class="toc-text">CSS样式规则</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%BC%95%E5%85%A5CSS%E6%A0%B7%E5%BC%8F%E8%A1%A8"><span class="toc-number">1.0.2.</span> <span class="toc-text">引入CSS样式表</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#CSS%E5%9F%BA%E7%A1%80%E9%80%89%E6%8B%A9%E5%99%A8"><span class="toc-number">1.0.3.</span> <span class="toc-text">CSS基础选择器</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CSS%E6%8E%A7%E5%88%B6%E6%96%87%E6%9C%AC%E6%A0%B7%E5%BC%8F"><span class="toc-number">2.</span> <span class="toc-text">CSS控制文本样式</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#CSS%E5%AD%97%E4%BD%93%E6%A0%B7%E5%BC%8F%E5%B1%9E%E6%80%A7"><span class="toc-number">2.0.1.</span> <span class="toc-text">CSS字体样式属性</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#CSS%E6%96%87%E6%9C%AC%E5%A4%96%E8%A7%82%E5%B1%9E%E6%80%A7"><span class="toc-number">2.0.2.</span> <span class="toc-text">CSS文本外观属性</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#CSS%E5%AE%9A%E4%B9%89%E8%83%8C%E6%99%AF%E9%A2%9C%E8%89%B2"><span class="toc-number">2.0.3.</span> <span class="toc-text">CSS定义背景颜色</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CSS%E9%AB%98%E7%BA%A7%E7%89%B9%E6%80%A7"><span class="toc-number">3.</span> <span class="toc-text">CSS高级特性</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#CSS%E5%A4%8D%E5%90%88%E9%80%89%E6%8B%A9%E5%99%A8"><span class="toc-number">3.0.1.</span> <span class="toc-text">CSS复合选择器</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#CSS%E5%B1%82%E5%8F%A0%E6%80%A7%E4%B8%8E%E7%BB%A7%E6%89%BF%E6%80%A7"><span class="toc-number">3.0.2.</span> <span class="toc-text">CSS层叠性与继承性</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#CSS%E4%BC%98%E5%85%88%E7%BA%A7"><span class="toc-number">3.0.3.</span> <span class="toc-text">CSS优先级</span></a></li></ol></li></ol></li></ol>
+                    </div>
+                </span>
+            </div>
+        </div>
+        
+    </div>
+</aside>
+
+
+
+  
+  <div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="CSS基础" data-title="CSS基础" data-url="http://example.com/2021/05/09/CSS%E5%9F%BA%E7%A1%80/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"true"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
+  
+  
+  
+  <div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
+<script>
+  var cloudTieConfig = {
+    url: "http://example.com/2021/05/09/CSS%E5%9F%BA%E7%A1%80/", 
+    sourceId: "CSS基础",
+    productKey: "true",
+    target: "cloud-tie-wrapper"
+  };
+</script>
+<script src="//img1.cache.netease.com/f2e/tie/yun/sdk/loader.js"></script>
   
 
-    
+  
+  <div id="SOHUCS" sid="CSS基础" ></div> 
+<script charset="utf-8" type="text/javascript" src="//changyan.sohu.com/upload/changyan.js" ></script>
+<script type="text/javascript">
+    window.changyan.api.config({
+        appid: "cyvpthIm3",
+        conf: "f5d012277db5591f64792f94206fbe67"
+    });
+</script>
+</script>
+  
+
+  
+    <section id="comments">
+      <div id="disqus_thread"></div>
+        <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'true'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a target="_blank" rel="noopener" href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </section>
+  
+
+  
+  <div id="gitment-ctn"></div> 
+<link rel="stylesheet" href="//imsun.github.io/gitment/style/default.css">
+<script src="//imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+var gitment = new Gitment({
+  id: "http://example.com/2021/05/09/CSS%E5%9F%BA%E7%A1%80/",
+  owner: '73168136',
+  repo: 'tnnnnt.github.io',
+  oauth: {
+    client_id: '2e460a9b1ec52065a3de',
+    client_secret: '508d25f37e19f052ed0e0c803fe7d5aaafc4c16b',
+  },
+})
+gitment.render('gitment-ctn')
+</script>
+  
 
 
           </div>
@@ -239,9 +661,9 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: true,
 		toc_hide_index: true,
@@ -310,7 +732,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">英语</a>
+                <a href="javascript:void(0)" class="js-tag color4">css</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">dreamweaver</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -318,19 +744,23 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">HTML</a>
+                <a href="javascript:void(0)" class="js-tag color3">英语</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Dreamweaver</a>
+                <a href="javascript:void(0)" class="js-tag color5">html</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">Java</a>
+                <a href="javascript:void(0)" class="js-tag color1">xhtml</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">Hexo</a>
+                <a href="javascript:void(0)" class="js-tag color5">java</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -342,19 +772,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Markdown</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">文本编辑器</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">学习工具</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">VMware</a>
+                <a href="javascript:void(0)" class="js-tag color2">vmware</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -374,6 +792,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">blog</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">github</a>
               </li>
              
@@ -386,11 +808,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Dos</a>
+                <a href="javascript:void(0)" class="js-tag color4">markdown</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">命令</a>
+                <a href="javascript:void(0)" class="js-tag color4">编辑器</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">dos</a>
               </li>
             
             <div class="clearfix"></div>
