@@ -6,23 +6,29 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>关于Markdown语法的粗略学习 | Hexo</title>
+  <title>力扣题库63-不同路径II（C语言） | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="标题一级标题（ctrl加1或1个#加空格，以下同）二级标题三级标题四级标题五级标题六级标题">
+  <meta name="description" content="题目描述一个机器人位于一个 m x n 网格的左上角 （起始点在下图中标记为“Start” ）。 机器人每次只能向下或者向右移动一步。机器人试图达到网格的右下角（在下图中标记为“Finish”）。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="关于Markdown语法的粗略学习">
-<meta property="og:url" content="http://example.com/2021/04/13/%E5%85%B3%E4%BA%8EMarkdown%E8%AF%AD%E6%B3%95%E7%9A%84%E7%B2%97%E7%95%A5%E5%AD%A6%E4%B9%A0/index.html">
+<meta property="og:title" content="力扣题库63-不同路径II（C语言）">
+<meta property="og:url" content="http://example.com/2021/05/13/%E5%8A%9B%E6%89%A3%E9%A2%98%E5%BA%9363-%E4%B8%8D%E5%90%8C%E8%B7%AF%E5%BE%84II%EF%BC%88C%E8%AF%AD%E8%A8%80%EF%BC%89/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="标题一级标题（ctrl加1或1个#加空格，以下同）二级标题三级标题四级标题五级标题六级标题">
+<meta property="og:description" content="题目描述一个机器人位于一个 m x n 网格的左上角 （起始点在下图中标记为“Start” ）。 机器人每次只能向下或者向右移动一步。机器人试图达到网格的右下角（在下图中标记为“Finish”）。">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/tnnnnt/picgo/img/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202021-04-13%20225530.png">
-<meta property="article:published_time" content="2021-04-13T14:48:59.000Z">
-<meta property="article:modified_time" content="2021-05-09T08:11:40.012Z">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/tnnnnt/picgo/img/20210513143254.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/tnnnnt/picgo/img/20210513143442.jpg">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/tnnnnt/picgo/img/20210513143621.jpg">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/tnnnnt/picgo/img/20210513142935.png">
+<meta property="article:published_time" content="2021-05-13T06:08:01.000Z">
+<meta property="article:modified_time" content="2021-05-13T06:39:10.206Z">
 <meta property="article:author" content="John Doe">
-<meta property="article:tag" content="markdown">
-<meta property="article:tag" content="编辑器">
+<meta property="article:tag" content="力扣">
+<meta property="article:tag" content="c">
+<meta property="article:tag" content="编程">
+<meta property="article:tag" content="算法">
+<meta property="article:tag" content="动态规划">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/tnnnnt/picgo/img/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202021-04-13%20225530.png">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/tnnnnt/picgo/img/20210513143254.png">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -156,20 +162,20 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-关于Markdown语法的粗略学习" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-力扣题库63-不同路径II（C语言）" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      关于Markdown语法的粗略学习
+      力扣题库63-不同路径II（C语言）
     </h1>
   
 
         
-        <a href="/2021/04/13/%E5%85%B3%E4%BA%8EMarkdown%E8%AF%AD%E6%B3%95%E7%9A%84%E7%B2%97%E7%95%A5%E5%AD%A6%E4%B9%A0/" class="archive-article-date">
-  	<time datetime="2021-04-13T14:48:59.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-04-13</time>
+        <a href="/2021/05/13/%E5%8A%9B%E6%89%A3%E9%A2%98%E5%BA%9363-%E4%B8%8D%E5%90%8C%E8%B7%AF%E5%BE%84II%EF%BC%88C%E8%AF%AD%E8%A8%80%EF%BC%89/" class="archive-article-date">
+  	<time datetime="2021-05-13T06:08:01.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-05-13</time>
 </a>
         
         
@@ -181,56 +187,52 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h2><h1 id="一级标题（ctrl加1或1个-加空格，以下同）"><a href="#一级标题（ctrl加1或1个-加空格，以下同）" class="headerlink" title="一级标题（ctrl加1或1个#加空格，以下同）"></a>一级标题（ctrl加1或1个#加空格，以下同）</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><h4 id="四级标题"><a href="#四级标题" class="headerlink" title="四级标题"></a>四级标题</h4><h5 id="五级标题"><a href="#五级标题" class="headerlink" title="五级标题"></a>五级标题</h5><h6 id="六级标题"><a href="#六级标题" class="headerlink" title="六级标题"></a>六级标题</h6><span id="more"></span>
-
-
-
-<h2 id="字体"><a href="#字体" class="headerlink" title="字体"></a>字体</h2><p><u>helloworld</u>！（ctrl加u）</p>
-<p><em>helloworld！</em>（斜体：ctrl加i或两边加*）</p>
-<p><strong>helloworld！</strong>（加粗：ctrl加b或两边加**）</p>
-<p><em><strong>helloworld！</strong></em>（斜体加粗：ctrl加ib或两边加***）</p>
-<p><del>helloworld！</del>（删除线：两边加~~）</p>
-<h2 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h2><blockquote>
-<p>用“&gt;”符号进行引用</p>
-</blockquote>
-<h2 id="分割线"><a href="#分割线" class="headerlink" title="分割线"></a>分割线</h2><hr>
+        <hr>
 <hr>
-<p>（—或***）</p>
-<h2 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h2><p><img src="https://cdn.jsdelivr.net/gh/tnnnnt/picgo/img/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202021-04-13%20225530.png" alt="好图">随便来个图hhh~</p>
-<h2 id="超链接"><a href="#超链接" class="headerlink" title="超链接"></a>超链接</h2><p><a target="_blank" rel="noopener" href="https://www.bilibili.com/">点击进入哔哩哔哩首页</a></p>
-<p>（输入[链接名]（链接））</p>
-<h2 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h2><ol>
-<li>有序列表</li>
-<li>数字+点+空格</li>
-<li>。。。</li>
-</ol>
+<h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>一个机器人位于一个 m x n 网格的左上角 （起始点在下图中标记为“Start” ）。</p>
+<p>机器人每次只能向下或者向右移动一步。机器人试图达到网格的右下角（在下图中标记为“Finish”）。</p>
+<span id="more"></span>
+
+<p>现在考虑网格中有障碍物。那么从左上角到右下角将会有多少条不同的路径？</p>
+<p><img src="https://cdn.jsdelivr.net/gh/tnnnnt/picgo/img/20210513143254.png" alt="robot_maze (1)"></p>
+<p>网格中的障碍物和空位置分别用 <code>1</code> 和 <code>0</code> 来表示。</p>
+<p><strong>示例 1：</strong></p>
+<p><img src="https://cdn.jsdelivr.net/gh/tnnnnt/picgo/img/20210513143442.jpg" alt="robot1"></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">输入：obstacleGrid &#x3D; [[0,0,0],[0,1,0],[0,0,0]]</span><br><span class="line">输出：2</span><br><span class="line">解释：</span><br><span class="line">3x3 网格的正中间有一个障碍物。</span><br><span class="line">从左上角到右下角一共有 2 条不同的路径：</span><br><span class="line">1. 向右 -&gt; 向右 -&gt; 向下 -&gt; 向下</span><br><span class="line">2. 向下 -&gt; 向下 -&gt; 向右 -&gt; 向右</span><br></pre></td></tr></table></figure>
+
+<p><strong>示例 2：</strong></p>
+<p><img src="https://cdn.jsdelivr.net/gh/tnnnnt/picgo/img/20210513143621.jpg" alt="robot2"></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">输入：obstacleGrid &#x3D; [[0,1],[0,0]]</span><br><span class="line">输出：1</span><br></pre></td></tr></table></figure>
+
+<p><strong>提示：</strong></p>
 <ul>
-<li>无序列表</li>
-<li>减号或加号或乘号+空格</li>
-<li>。。。</li>
+<li><code>m == obstacleGrid.length</code></li>
+<li><code>n == obstacleGrid[i].length</code></li>
+<li><code>1 &lt;= m, n &lt;= 100</code></li>
+<li><code>obstacleGrid[i][j] </code>为<code>0</code>或<code>1</code></li>
 </ul>
-<h2 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h2><table>
-<thead>
-<tr>
-<th>名字</th>
-<th>性别</th>
-<th>生日</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>三硝基甲苯</td>
-<td>男</td>
-<td>2000.12.07</td>
-</tr>
-</tbody></table>
-<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&quot;stdio.h&quot;</span></span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;输入3个table键上面的那个键+语言名&quot;</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-
-
-
 <hr>
-<h2 id="参考文献："><a href="#参考文献：" class="headerlink" title="参考文献："></a>参考文献：</h2><p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV12J41137hu?p=6">B站up主–狂神说Java–Markdown语法详解</a></p>
+<h2 id="解题思路"><a href="#解题思路" class="headerlink" title="解题思路"></a>解题思路</h2><p>定义了一个二维数组way，其中的元素代表从起点到对应位置的路径数。一开始给数组way遍历为每个元素赋初值为0。因为从起点到起点的路径数必定是1，所以给起点元素即way[0][0]赋值为1。</p>
+<p>接下来重点讲一下算法，因为机器人只能向下或向右移动，所以机器人要从起点到达某个格子必须经过该格子的上面或左侧的格子，所以机器人要从起点到该格子的路径数为从起点到对应格子上面的格子的路径数加上从起点到对应格子左侧的格子的路径数，如图所示,机器人要从起点到A格子的路径数为从起点到B格子的路径数加上从起点到C格子的路径数。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/tnnnnt/picgo/img/20210513142935.png" alt="robot_maze"></p>
+<p>除此之外，我们还要考虑到起点可能会放置障碍物，则路径数为0，所以有如下代码直接返回路径数为0。</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span>(obstacleGrid[<span class="number">0</span>][<span class="number">0</span>])</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br></pre></td></tr></table></figure>
+
+<p>还要考虑到格子本身是障碍物的情况，则对应路径数必为0，与其初始值一致，故直接continue即可。</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span>(obstacleGrid[bl][bll])</span><br><span class="line">    <span class="keyword">continue</span>;</span><br></pre></td></tr></table></figure>
+
+
+<p>还要考虑到计算到格子路径数时格子位于首行或首列，则对应路径数只能为左侧路径数或上面的路径数。</p>
+<pre><code>if(bl)
+    way[bl][bll]+=way[bl-1][bll];
+if(bll)
+    way[bl][bll]+=way[bl][bll-1];
+</code></pre>
+<p>最后计算完数组way的每一个元素后，函数返回way[n-1][m-1]即可。</p>
+<hr>
+<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">uniquePathsWithObstacles</span><span class="params">(<span class="keyword">int</span>** obstacleGrid, <span class="keyword">int</span> obstacleGridSize, <span class="keyword">int</span>* obstacleGridColSize)</span></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> n=obstacleGridSize,m=obstacleGridColSize[<span class="number">0</span>],bl,bll;</span><br><span class="line">	<span class="keyword">int</span> way[n][m];</span><br><span class="line">	<span class="keyword">for</span>(bl=<span class="number">0</span>;bl&lt;n;bl++)</span><br><span class="line">	    <span class="keyword">for</span>(bll=<span class="number">0</span>;bll&lt;m;bll++)</span><br><span class="line">	        way[bl][bll]=<span class="number">0</span>;</span><br><span class="line">	way[<span class="number">0</span>][<span class="number">0</span>]=<span class="number">1</span>;</span><br><span class="line">	<span class="keyword">if</span>(obstacleGrid[<span class="number">0</span>][<span class="number">0</span>])</span><br><span class="line">		<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">	<span class="keyword">for</span>(bl=<span class="number">0</span>;bl&lt;n;bl++)</span><br><span class="line">		<span class="keyword">for</span>(bll=<span class="number">0</span>;bll&lt;m;bll++)</span><br><span class="line">		&#123;</span><br><span class="line">			<span class="keyword">if</span>(obstacleGrid[bl][bll])</span><br><span class="line">				<span class="keyword">continue</span>;</span><br><span class="line">			<span class="keyword">if</span>(bl)</span><br><span class="line">				way[bl][bll]+=way[bl<span class="number">-1</span>][bll];</span><br><span class="line">			<span class="keyword">if</span>(bll)</span><br><span class="line">				way[bl][bll]+=way[bl][bll<span class="number">-1</span>];</span><br><span class="line">		&#125;</span><br><span class="line">	<span class="keyword">return</span> way[n<span class="number">-1</span>][m<span class="number">-1</span>];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>链接：<a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/unique-paths-ii/solution/63bu-tong-lu-jing-ii-zai-li-kou-wan-chen-whvl/">https://leetcode-cn.com/problems/unique-paths-ii/solution/63bu-tong-lu-jing-ii-zai-li-kou-wan-chen-whvl/</a><br>来源：力扣（LeetCode）<br>著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。</p>
 
       
 
@@ -278,11 +280,23 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">markdown</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">力扣</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">编辑器</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">c</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">编程</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">算法</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">动态规划</a>
         		</li>
       		
 		</ul>
@@ -338,7 +352,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2021/04/13/%E5%85%B3%E4%BA%8EMarkdown%E8%AF%AD%E6%B3%95%E7%9A%84%E7%B2%97%E7%95%A5%E5%AD%A6%E4%B9%A0/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2021/05/13/%E5%8A%9B%E6%89%A3%E9%A2%98%E5%BA%9363-%E4%B8%8D%E5%90%8C%E8%B7%AF%E5%BE%84II%EF%BC%88C%E8%AF%AD%E8%A8%80%EF%BC%89/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -352,18 +366,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2021/04/14/%E5%9F%BA%E4%BA%8Ehexo%E6%A1%86%E6%9E%B6%E7%9A%84%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%96%B9%E6%B3%95/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          基于hexo框架的博客搭建方法
-        
-      </div>
-    </a>
   
-  
-    <a href="/2021/04/13/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Hello World</div>
+    <a href="/2021/05/09/CSS%E5%9F%BA%E7%A1%80/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">CSS基础</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -390,7 +395,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A0%87%E9%A2%98"><span class="toc-number">1.</span> <span class="toc-text">标题</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B8%80%E7%BA%A7%E6%A0%87%E9%A2%98%EF%BC%88ctrl%E5%8A%A01%E6%88%961%E4%B8%AA-%E5%8A%A0%E7%A9%BA%E6%A0%BC%EF%BC%8C%E4%BB%A5%E4%B8%8B%E5%90%8C%EF%BC%89"><span class="toc-number"></span> <span class="toc-text">一级标题（ctrl加1或1个#加空格，以下同）</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E7%BA%A7%E6%A0%87%E9%A2%98"><span class="toc-number">1.</span> <span class="toc-text">二级标题</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%89%E7%BA%A7%E6%A0%87%E9%A2%98"><span class="toc-number">1.1.</span> <span class="toc-text">三级标题</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%9B%9B%E7%BA%A7%E6%A0%87%E9%A2%98"><span class="toc-number">1.1.1.</span> <span class="toc-text">四级标题</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E4%BA%94%E7%BA%A7%E6%A0%87%E9%A2%98"><span class="toc-number">1.1.1.1.</span> <span class="toc-text">五级标题</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#%E5%85%AD%E7%BA%A7%E6%A0%87%E9%A2%98"><span class="toc-number">1.1.1.1.1.</span> <span class="toc-text">六级标题</span></a></li></ol></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AD%97%E4%BD%93"><span class="toc-number">2.</span> <span class="toc-text">字体</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BC%95%E7%94%A8"><span class="toc-number">3.</span> <span class="toc-text">引用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%86%E5%89%B2%E7%BA%BF"><span class="toc-number">4.</span> <span class="toc-text">分割线</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%BE%E7%89%87"><span class="toc-number">5.</span> <span class="toc-text">图片</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%B6%85%E9%93%BE%E6%8E%A5"><span class="toc-number">6.</span> <span class="toc-text">超链接</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%97%E8%A1%A8"><span class="toc-number">7.</span> <span class="toc-text">列表</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%A1%A8%E6%A0%BC"><span class="toc-number">8.</span> <span class="toc-text">表格</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%A3%E7%A0%81"><span class="toc-number">9.</span> <span class="toc-text">代码</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE%EF%BC%9A"><span class="toc-number">10.</span> <span class="toc-text">参考文献：</span></a></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%A2%98%E7%9B%AE%E6%8F%8F%E8%BF%B0"><span class="toc-number">1.</span> <span class="toc-text">题目描述</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%A7%A3%E9%A2%98%E6%80%9D%E8%B7%AF"><span class="toc-number">2.</span> <span class="toc-text">解题思路</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%A3%E7%A0%81"><span class="toc-number">3.</span> <span class="toc-text">代码</span></a></li></ol>
                     </div>
                 </span>
             </div>
@@ -404,7 +409,7 @@
   
   <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="关于Markdown语法的粗略学习" data-title="关于Markdown语法的粗略学习" data-url="http://example.com/2021/04/13/%E5%85%B3%E4%BA%8EMarkdown%E8%AF%AD%E6%B3%95%E7%9A%84%E7%B2%97%E7%95%A5%E5%AD%A6%E4%B9%A0/"></div>
+	<div class="ds-thread" data-thread-key="力扣题库63-不同路径II（C语言）" data-title="力扣题库63-不同路径II（C语言）" data-url="http://example.com/2021/05/13/%E5%8A%9B%E6%89%A3%E9%A2%98%E5%BA%9363-%E4%B8%8D%E5%90%8C%E8%B7%AF%E5%BE%84II%EF%BC%88C%E8%AF%AD%E8%A8%80%EF%BC%89/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
@@ -427,8 +432,8 @@
   <div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
 <script>
   var cloudTieConfig = {
-    url: "http://example.com/2021/04/13/%E5%85%B3%E4%BA%8EMarkdown%E8%AF%AD%E6%B3%95%E7%9A%84%E7%B2%97%E7%95%A5%E5%AD%A6%E4%B9%A0/", 
-    sourceId: "关于Markdown语法的粗略学习",
+    url: "http://example.com/2021/05/13/%E5%8A%9B%E6%89%A3%E9%A2%98%E5%BA%9363-%E4%B8%8D%E5%90%8C%E8%B7%AF%E5%BE%84II%EF%BC%88C%E8%AF%AD%E8%A8%80%EF%BC%89/", 
+    sourceId: "力扣题库63-不同路径II（C语言）",
     productKey: "true",
     target: "cloud-tie-wrapper"
   };
@@ -437,7 +442,7 @@
   
 
   
-  <div id="SOHUCS" sid="关于Markdown语法的粗略学习" ></div> 
+  <div id="SOHUCS" sid="力扣题库63-不同路径II（C语言）" ></div> 
 <script charset="utf-8" type="text/javascript" src="//changyan.sohu.com/upload/changyan.js" ></script>
 <script type="text/javascript">
     window.changyan.api.config({
@@ -472,7 +477,7 @@
 <script src="//imsun.github.io/gitment/dist/gitment.browser.js"></script>
 <script>
 var gitment = new Gitment({
-  id: "http://example.com/2021/04/13/%E5%85%B3%E4%BA%8EMarkdown%E8%AF%AD%E6%B3%95%E7%9A%84%E7%B2%97%E7%95%A5%E5%AD%A6%E4%B9%A0/",
+  id: "http://example.com/2021/05/13/%E5%8A%9B%E6%89%A3%E9%A2%98%E5%BA%9363-%E4%B8%8D%E5%90%8C%E8%B7%AF%E5%BE%84II%EF%BC%88C%E8%AF%AD%E8%A8%80%EF%BC%89/",
   owner: '73168136',
   repo: 'tnnnnt.github.io',
   oauth: {
