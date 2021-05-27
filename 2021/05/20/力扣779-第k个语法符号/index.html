@@ -16,7 +16,7 @@
 <meta property="og:description" content="题目描述 在第一行我们写上一个 0 。接下来的每一行，将前一行中的 0 替换为 01 ， 1 替换为 10 。 给定行数 N 和序数 K，返回第 N 行中第 K个字符。（K从1开始）">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2021-05-20T07:25:10.000Z">
-<meta property="article:modified_time" content="2021-05-20T07:36:34.229Z">
+<meta property="article:modified_time" content="2021-05-27T05:32:48.734Z">
 <meta property="article:author" content="John Doe">
 <meta property="article:tag" content="力扣">
 <meta property="article:tag" content="c">
@@ -196,7 +196,7 @@
 <hr>
 <blockquote>
 <h3 id="解题思路"><a href="#解题思路" class="headerlink" title="解题思路"></a>解题思路</h3></blockquote>
-<p>由题意知，<br>第一行的第一个数字0可以推出第二行的第一个数字0和第二个数字1，<br>第二行的第一个数字0可以推出第三行的第一个数字0和第二个数字1，<br>第二行的第二个数字1可以推出第三行的第三个数字1和第四个数字0…<br>不难发现，第n行的第k个数字可以推出第(n+1)行的第(2n-1)和第2n个数字，所以我采用递归的方式简化算法。<br>由以下三点可得出最终代码：</p>
+<p>由题意知，<br>第一行的第一个数字0可以推出第二行的第一个数字0和第二个数字1，<br>第二行的第一个数字0可以推出第三行的第一个数字0和第二个数字1，<br>第二行的第二个数字1可以推出第三行的第三个数字1和第四个数字0…<br>不难发现，第n行的第k个数字可以推出第(n+1)行的第(2k-1)和第2k个数字，所以我采用递归的方式简化算法。<br>由以下三点可得出最终代码：</p>
 <ol>
 <li>逆推可知，除了第一行第一个数字0以外，第n行的第k个数字由第(n-1)行的第((k+1)/2)个数字推出。</li>
 <li>因为任何行的第一个数字都最终来源于第一行第一个数字，所以当k为1时，无论n为多少，其最终返回值都为0。</li>
@@ -589,6 +589,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">java</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">html</a>
               </li>
              
@@ -597,15 +601,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">java</a>
+                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">matlab</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -653,6 +653,26 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">vmware</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">虚拟机</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">操作系统</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">win10</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">dos</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">博客</a>
               </li>
              
@@ -673,27 +693,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">vmware</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">虚拟机</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">操作系统</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">win10</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">数据结构</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">dos</a>
               </li>
             
             <div class="clearfix"></div>
