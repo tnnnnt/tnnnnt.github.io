@@ -16,7 +16,7 @@
 <meta property="og:description" content="​    分享一下最近广航ACM集训队举办的蓝桥杯选拔赛的“整数拼凑问题”，并分享我的解法（仅供参考）。">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2021-12-05T15:34:06.000Z">
-<meta property="article:modified_time" content="2021-12-05T15:34:16.994Z">
+<meta property="article:modified_time" content="2021-12-05T15:43:30.504Z">
 <meta property="article:author" content="John Doe">
 <meta property="article:tag" content="动态规划">
 <meta property="article:tag" content="蓝桥杯">
@@ -204,7 +204,7 @@
 
 <blockquote>
 <h2 id="解题思路"><a href="#解题思路" class="headerlink" title="解题思路"></a>解题思路</h2></blockquote>
-<p>当n=1，只有1=1这1种，n=2时，有2=2和2=1+1这两种，n=3时，有3=3、3=2+1、3=1+1+1三种，n=4时，有4=4、4=3+1、4=2+2、4=2+1+1、4=1+1+1+1五种，我们把等号左边的数称为组合数，等号右边的数称为拆分数，为了试着找出规律，我们暂时先列出1个如下4<em>4的矩阵a，*<em>第i行j列代表组合数为i且最大拆分数为j的拼凑方案，则第i行的数据之和就表示对于i的总拼凑方案</em></em></p>
+<p>当n=1，只有1=1这1种，n=2时，有2=2和2=1+1这两种，n=3时，有3=3、3=2+1、3=1+1+1三种，n=4时，有4=4、4=3+1、4=2+2、4=2+1+1、4=1+1+1+1五种，我们把等号左边的数称为组合数，等号右边的数称为拆分数，为了试着找出规律，我们暂时先列出1个如下4乘4的矩阵a，<strong>第i行j列代表组合数为i且最大拆分数为j的拼凑方案，则第i行的数据之和就表示对于i的总拼凑方案</strong></p>
 <table>
 <thead>
 <tr>
