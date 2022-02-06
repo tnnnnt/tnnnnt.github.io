@@ -6,24 +6,24 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>力扣779.第k个语法符号 | Hexo</title>
+  <title>公交车路线 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="题目描述 在第一行我们写上一个 0 。接下来的每一行，将前一行中的 0 替换为 01 ， 1 替换为 10 。 给定行数 N 和序数 K，返回第 N 行中第 K个字符。（K从1开始）">
-<meta property="og:type" content="article">
-<meta property="og:title" content="力扣779.第k个语法符号">
-<meta property="og:url" content="http://example.com/2021/05/20/%E5%8A%9B%E6%89%A3779-%E7%AC%ACk%E4%B8%AA%E8%AF%AD%E6%B3%95%E7%AC%A6%E5%8F%B7/index.html">
+  <meta property="og:type" content="article">
+<meta property="og:title" content="公交车路线">
+<meta property="og:url" content="http://example.com/2022/02/06/%E5%85%AC%E4%BA%A4%E8%BD%A6%E8%B7%AF%E7%BA%BF/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="题目描述 在第一行我们写上一个 0 。接下来的每一行，将前一行中的 0 替换为 01 ， 1 替换为 10 。 给定行数 N 和序数 K，返回第 N 行中第 K个字符。（K从1开始）">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2021-05-20T07:25:10.000Z">
-<meta property="article:modified_time" content="2021-05-27T05:32:48.734Z">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/tnnnnt/picgo/img/20220206203553.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/tnnnnt/picgo/img/20220206203620.png">
+<meta property="article:published_time" content="2022-02-06T12:34:44.000Z">
+<meta property="article:modified_time" content="2022-02-06T13:07:48.361Z">
 <meta property="article:author" content="John Doe">
 <meta property="article:tag" content="算法">
-<meta property="article:tag" content="力扣">
-<meta property="article:tag" content="递归">
-<meta property="article:tag" content="c">
-<meta property="article:tag" content="编程">
+<meta property="article:tag" content="c++">
+<meta property="article:tag" content="洛谷">
+<meta property="article:tag" content="动态规划">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/tnnnnt/picgo/img/20220206203553.png">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -157,20 +157,20 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-力扣779-第k个语法符号" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-公交车路线" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      力扣779.第k个语法符号
+      公交车路线
     </h1>
   
 
         
-        <a href="/2021/05/20/%E5%8A%9B%E6%89%A3779-%E7%AC%ACk%E4%B8%AA%E8%AF%AD%E6%B3%95%E7%AC%A6%E5%8F%B7/" class="archive-article-date">
-  	<time datetime="2021-05-20T07:25:10.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-05-20</time>
+        <a href="/2022/02/06/%E5%85%AC%E4%BA%A4%E8%BD%A6%E8%B7%AF%E7%BA%BF/" class="archive-article-date">
+  	<time datetime="2022-02-06T12:34:44.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-02-06</time>
 </a>
         
         
@@ -182,33 +182,273 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <blockquote>
-<h3 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h3></blockquote>
-<p>在第一行我们写上一个 0 。接下来的每一行，将前一行中的 0 替换为 01 ， 1 替换为 10 。</p>
-<p>给定行数 N 和序数 K，返回第 N 行中第 K个字符。（K从1开始）</p>
+        <hr>
+<p><img src="https://cdn.jsdelivr.net/gh/tnnnnt/picgo/img/20220206203553.png" alt="image-20220206203546019"></p>
 <span id="more"></span>
 
-<p><strong>例子</strong>:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">输入: N &#x3D; 1, K &#x3D; 1</span><br><span class="line">输出: 0</span><br><span class="line"></span><br><span class="line">输入: N &#x3D; 2, K &#x3D; 1</span><br><span class="line">输出: 0</span><br><span class="line"></span><br><span class="line">输入: N &#x3D; 2, K &#x3D; 2</span><br><span class="line">输出: 1</span><br><span class="line"></span><br><span class="line">输入: N &#x3D; 4, K &#x3D; 5</span><br><span class="line">输出: 1</span><br><span class="line"></span><br><span class="line">解释:</span><br><span class="line">第一行: 0</span><br><span class="line">第二行: 01</span><br><span class="line">第三行: 0110</span><br><span class="line">第四行: 01101001</span><br></pre></td></tr></table></figure>
-
-<p><strong>注意</strong>：</p>
-<p>N 的范围 [1, 30].<br>K 的范围 [1, 2^(N-1)].</p>
+<p><img src="https://cdn.jsdelivr.net/gh/tnnnnt/picgo/img/20220206203620.png" alt="image-20220206203620198"></p>
 <hr>
 <blockquote>
-<h3 id="解题思路"><a href="#解题思路" class="headerlink" title="解题思路"></a>解题思路</h3></blockquote>
-<p>由题意知，<br>第一行的第一个数字0可以推出第二行的第一个数字0和第二个数字1，<br>第二行的第一个数字0可以推出第三行的第一个数字0和第二个数字1，<br>第二行的第二个数字1可以推出第三行的第三个数字1和第四个数字0…<br>不难发现，第n行的第k个数字可以推出第(n+1)行的第(2k-1)和第2k个数字，所以我采用递归的方式简化算法。<br>由以下三点可得出最终代码：</p>
-<ol>
-<li>逆推可知，除了第一行第一个数字0以外，第n行的第k个数字由第(n-1)行的第((k+1)/2)个数字推出。</li>
-<li>因为任何行的第一个数字都最终来源于第一行第一个数字，所以当k为1时，无论n为多少，其最终返回值都为0。</li>
-<li>因为0推出的数为01，所以由0推出的数，如果其k值为偶数，则为1，否则为0。</li>
-<li>因为1推出的数为10，所以由1推出的数，如果其k值为偶数，则为0，否则为1。</li>
-</ol>
-<hr>
+<h3 id="解题思路（找规律）"><a href="#解题思路（找规律）" class="headerlink" title="解题思路（找规律）"></a>解题思路（找规律）</h3></blockquote>
+<p>由题意可以做出如下图矩阵。</p>
+<table>
+<thead>
+<tr>
+<th align="center">换车数n\车站</th>
+<th align="center">F</th>
+<th align="center">G</th>
+<th align="center">H</th>
+<th align="center">A</th>
+<th align="center">B</th>
+<th align="center">C</th>
+<th align="center">D</th>
+<th align="center">E</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">1</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">1</td>
+<td align="center">0</td>
+<td align="center">1</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">0</td>
+</tr>
+<tr>
+<td align="center">2</td>
+<td align="center">0</td>
+<td align="center">1</td>
+<td align="center">0</td>
+<td align="center">2</td>
+<td align="center">0</td>
+<td align="center">1</td>
+<td align="center">0</td>
+<td align="center">0</td>
+</tr>
+<tr>
+<td align="center">3</td>
+<td align="center">1</td>
+<td align="center">0</td>
+<td align="center">3</td>
+<td align="center">0</td>
+<td align="center">3</td>
+<td align="center">0</td>
+<td align="center">1</td>
+<td align="center">0</td>
+</tr>
+<tr>
+<td align="center">4</td>
+<td align="center">0</td>
+<td align="center">4</td>
+<td align="center">0</td>
+<td align="center">6</td>
+<td align="center">0</td>
+<td align="center">4</td>
+<td align="center">0</td>
+<td align="center">2</td>
+</tr>
+<tr>
+<td align="center">5</td>
+<td align="center">4</td>
+<td align="center">0</td>
+<td align="center">10</td>
+<td align="center">0</td>
+<td align="center">10</td>
+<td align="center">0</td>
+<td align="center">4</td>
+<td align="center">0</td>
+</tr>
+<tr>
+<td align="center">6</td>
+<td align="center">0</td>
+<td align="center">14</td>
+<td align="center">0</td>
+<td align="center">20</td>
+<td align="center">0</td>
+<td align="center">14</td>
+<td align="center">0</td>
+<td align="center">8</td>
+</tr>
+<tr>
+<td align="center">7</td>
+<td align="center">14</td>
+<td align="center">0</td>
+<td align="center">34</td>
+<td align="center">0</td>
+<td align="center">34</td>
+<td align="center">0</td>
+<td align="center">14</td>
+<td align="center">0</td>
+</tr>
+<tr>
+<td align="center">8</td>
+<td align="center">0</td>
+<td align="center">48</td>
+<td align="center">0</td>
+<td align="center">68</td>
+<td align="center">0</td>
+<td align="center">48</td>
+<td align="center">0</td>
+<td align="center">28</td>
+</tr>
+<tr>
+<td align="center">9</td>
+<td align="center">48</td>
+<td align="center">0</td>
+<td align="center">116</td>
+<td align="center">0</td>
+<td align="center">116</td>
+<td align="center">0</td>
+<td align="center">48</td>
+<td align="center">0</td>
+</tr>
+</tbody></table>
+<p>不难发现F列到D列是以A列为对称轴的对称矩阵，所以可以简化为如下矩阵。</p>
+<table>
+<thead>
+<tr>
+<th align="center">换车数n\车站</th>
+<th align="center">F</th>
+<th align="center">G</th>
+<th align="center">H</th>
+<th align="center">A</th>
+<th align="center">E</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">1</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">1</td>
+<td align="center">0</td>
+<td align="center">0</td>
+</tr>
+<tr>
+<td align="center">2</td>
+<td align="center">0</td>
+<td align="center">1</td>
+<td align="center">0</td>
+<td align="center">2</td>
+<td align="center">0</td>
+</tr>
+<tr>
+<td align="center">3</td>
+<td align="center">1</td>
+<td align="center">0</td>
+<td align="center">3</td>
+<td align="center">0</td>
+<td align="center">0</td>
+</tr>
+<tr>
+<td align="center">4</td>
+<td align="center">0</td>
+<td align="center">4</td>
+<td align="center">0</td>
+<td align="center">6</td>
+<td align="center">2</td>
+</tr>
+<tr>
+<td align="center">5</td>
+<td align="center">4</td>
+<td align="center">0</td>
+<td align="center">10</td>
+<td align="center">0</td>
+<td align="center">0</td>
+</tr>
+<tr>
+<td align="center">6</td>
+<td align="center">0</td>
+<td align="center">14</td>
+<td align="center">0</td>
+<td align="center">20</td>
+<td align="center">8</td>
+</tr>
+<tr>
+<td align="center">7</td>
+<td align="center">14</td>
+<td align="center">0</td>
+<td align="center">34</td>
+<td align="center">0</td>
+<td align="center">0</td>
+</tr>
+<tr>
+<td align="center">8</td>
+<td align="center">0</td>
+<td align="center">48</td>
+<td align="center">0</td>
+<td align="center">68</td>
+<td align="center">28</td>
+</tr>
+<tr>
+<td align="center">9</td>
+<td align="center">48</td>
+<td align="center">0</td>
+<td align="center">116</td>
+<td align="center">0</td>
+<td align="center">0</td>
+</tr>
+</tbody></table>
+<p>又发现当n为奇数，E(n)必为0，所以接下来只有再另外讨论n为偶数的情况即可，当n为偶数时，不难发现E(n)=G(n-2)*2，而G(n)=F(n-1)+H(n-1)=G(n-2)+H(n-1)，综上，再者为了节省空间，再将矩阵定义为二维数组简化如下。</p>
+<table>
+<thead>
+<tr>
+<th align="center">行坐标</th>
+<th align="center">G</th>
+<th align="center">H</th>
+<th align="center">n</th>
+<th align="center">E</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">0</td>
+<td align="center">1</td>
+<td align="center">1</td>
+<td align="center">4</td>
+<td align="center">2</td>
+</tr>
+<tr>
+<td align="center">1</td>
+<td align="center">4</td>
+<td align="center">3</td>
+<td align="center">6</td>
+<td align="center">8</td>
+</tr>
+<tr>
+<td align="center">2</td>
+<td align="center">14</td>
+<td align="center">10</td>
+<td align="center">8</td>
+<td align="center">28</td>
+</tr>
+<tr>
+<td align="center">3</td>
+<td align="center">48</td>
+<td align="center">34</td>
+<td align="center">10</td>
+<td align="center">96</td>
+</tr>
+<tr>
+<td align="center">4</td>
+<td align="center">164</td>
+<td align="center">116</td>
+<td align="center">12</td>
+<td align="center">328</td>
+</tr>
+<tr>
+<td align="center">……</td>
+<td align="center">…</td>
+<td align="center">…</td>
+<td align="center">…</td>
+<td align="center">…</td>
+</tr>
+</tbody></table>
+<p>E(n)=G((n-4)/2)*2，G(n)=(G(n-1)+H(n-1))*2，H(n)=G(n-1)+H(n-1)*2，由此便可求得答案。</p>
 <blockquote>
 <h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3></blockquote>
-<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">kthGrammar</span><span class="params">(<span class="keyword">int</span> n, <span class="keyword">int</span> k)</span></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(k==<span class="number">1</span>)    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">else</span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(kthGrammar(n<span class="number">-1</span>,(k+<span class="number">1</span>)/<span class="number">2</span>))&#123;</span><br><span class="line">            <span class="keyword">if</span>(k%<span class="number">2</span>) <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">            <span class="keyword">else</span>    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span>&#123;</span><br><span class="line">            <span class="keyword">if</span>(k%<span class="number">2</span>) <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">            <span class="keyword">else</span>    <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> M 1000</span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="keyword">int</span> gh[<span class="number">5000000</span>][<span class="number">2</span>];</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> n;</span><br><span class="line">    cin &gt;&gt; n;</span><br><span class="line">    <span class="keyword">if</span>(n%<span class="number">2</span>==<span class="number">1</span>)&#123;</span><br><span class="line">        cout &lt;&lt; <span class="number">0</span> &lt;&lt; endl;</span><br><span class="line">    &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">        gh[<span class="number">0</span>][<span class="number">0</span>] = gh[<span class="number">0</span>][<span class="number">1</span>] = <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">int</span> end = (n - <span class="number">4</span>) / <span class="number">2</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= end;i++)&#123;</span><br><span class="line">            gh[i][<span class="number">0</span>] = (gh[i - <span class="number">1</span>][<span class="number">0</span>] + gh[i - <span class="number">1</span>][<span class="number">1</span>]) * <span class="number">2</span> % M;</span><br><span class="line">            gh[i][<span class="number">1</span>] = (gh[i - <span class="number">1</span>][<span class="number">0</span>] + gh[i - <span class="number">1</span>][<span class="number">1</span>] * <span class="number">2</span>) % M;</span><br><span class="line">        &#125;</span><br><span class="line">        cout &lt;&lt; gh[end][<span class="number">0</span>] * <span class="number">2</span> % M &lt;&lt; endl;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p>链接：<a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/k-th-symbol-in-grammar/solution/li-kou-779di-kge-yu-fa-fu-hao-by-compete-ehrx/">https://leetcode-cn.com/problems/k-th-symbol-in-grammar/solution/li-kou-779di-kge-yu-fa-fu-hao-by-compete-ehrx/</a><br>来源：力扣（LeetCode）<br>著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。</p>
 
       
 
@@ -260,19 +500,15 @@
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">力扣</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">c++</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">递归</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">洛谷</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">c</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">编程</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">动态规划</a>
         		</li>
       		
 		</ul>
@@ -328,7 +564,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2021/05/20/%E5%8A%9B%E6%89%A3779-%E7%AC%ACk%E4%B8%AA%E8%AF%AD%E6%B3%95%E7%AC%A6%E5%8F%B7/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2022/02/06/%E5%85%AC%E4%BA%A4%E8%BD%A6%E8%B7%AF%E7%BA%BF/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -342,18 +578,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2021/05/20/%E5%8A%9B%E6%89%A3808-%E5%88%86%E6%B1%A4/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          力扣808.分汤
-        
-      </div>
-    </a>
   
-  
-    <a href="/2021/05/19/matlab%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">matlab数据类型</div>
+    <a href="/2022/02/05/N%E7%9A%87%E5%90%8E-II/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">N皇后 II</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -380,7 +607,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%A2%98%E7%9B%AE%E6%8F%8F%E8%BF%B0"><span class="toc-number">1.</span> <span class="toc-text">题目描述</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A7%A3%E9%A2%98%E6%80%9D%E8%B7%AF"><span class="toc-number">2.</span> <span class="toc-text">解题思路</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%A3%E7%A0%81"><span class="toc-number">3.</span> <span class="toc-text">代码</span></a></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A7%A3%E9%A2%98%E6%80%9D%E8%B7%AF%EF%BC%88%E6%89%BE%E8%A7%84%E5%BE%8B%EF%BC%89"><span class="toc-number">1.</span> <span class="toc-text">解题思路（找规律）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%A3%E7%A0%81"><span class="toc-number">2.</span> <span class="toc-text">代码</span></a></li></ol>
                     </div>
                 </span>
             </div>
@@ -394,7 +621,7 @@
   
   <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="力扣779-第k个语法符号" data-title="力扣779.第k个语法符号" data-url="http://example.com/2021/05/20/%E5%8A%9B%E6%89%A3779-%E7%AC%ACk%E4%B8%AA%E8%AF%AD%E6%B3%95%E7%AC%A6%E5%8F%B7/"></div>
+	<div class="ds-thread" data-thread-key="公交车路线" data-title="公交车路线" data-url="http://example.com/2022/02/06/%E5%85%AC%E4%BA%A4%E8%BD%A6%E8%B7%AF%E7%BA%BF/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
@@ -417,8 +644,8 @@
   <div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
 <script>
   var cloudTieConfig = {
-    url: "http://example.com/2021/05/20/%E5%8A%9B%E6%89%A3779-%E7%AC%ACk%E4%B8%AA%E8%AF%AD%E6%B3%95%E7%AC%A6%E5%8F%B7/", 
-    sourceId: "力扣779-第k个语法符号",
+    url: "http://example.com/2022/02/06/%E5%85%AC%E4%BA%A4%E8%BD%A6%E8%B7%AF%E7%BA%BF/", 
+    sourceId: "公交车路线",
     productKey: "true",
     target: "cloud-tie-wrapper"
   };
@@ -427,7 +654,7 @@
   
 
   
-  <div id="SOHUCS" sid="力扣779-第k个语法符号" ></div> 
+  <div id="SOHUCS" sid="公交车路线" ></div> 
 <script charset="utf-8" type="text/javascript" src="//changyan.sohu.com/upload/changyan.js" ></script>
 <script type="text/javascript">
     window.changyan.api.config({
@@ -462,7 +689,7 @@
 <script src="//imsun.github.io/gitment/dist/gitment.browser.js"></script>
 <script>
 var gitment = new Gitment({
-  id: "http://example.com/2021/05/20/%E5%8A%9B%E6%89%A3779-%E7%AC%ACk%E4%B8%AA%E8%AF%AD%E6%B3%95%E7%AC%A6%E5%8F%B7/",
+  id: "http://example.com/2022/02/06/%E5%85%AC%E4%BA%A4%E8%BD%A6%E8%B7%AF%E7%BA%BF/",
   owner: '73168136',
   repo: 'tnnnnt.github.io',
   oauth: {
