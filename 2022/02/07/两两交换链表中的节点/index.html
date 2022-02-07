@@ -6,24 +6,24 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>力扣808.分汤 | Hexo</title>
+  <title>两两交换链表中的节点 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="题目描述 有 A 和 B 两种类型的汤。一开始每种类型的汤有 N 毫升。有四种分配操作：">
-<meta property="og:type" content="article">
-<meta property="og:title" content="力扣808.分汤">
-<meta property="og:url" content="http://example.com/2021/05/20/%E5%8A%9B%E6%89%A3808-%E5%88%86%E6%B1%A4/index.html">
+  <meta property="og:type" content="article">
+<meta property="og:title" content="两两交换链表中的节点">
+<meta property="og:url" content="http://example.com/2022/02/07/%E4%B8%A4%E4%B8%A4%E4%BA%A4%E6%8D%A2%E9%93%BE%E8%A1%A8%E4%B8%AD%E7%9A%84%E8%8A%82%E7%82%B9/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="题目描述 有 A 和 B 两种类型的汤。一开始每种类型的汤有 N 毫升。有四种分配操作：">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2021-05-20T07:38:07.000Z">
-<meta property="article:modified_time" content="2021-05-20T07:52:39.364Z">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/tnnnnt/picgo/img/20220207224612.png">
+<meta property="article:published_time" content="2022-02-07T14:45:24.000Z">
+<meta property="article:modified_time" content="2022-02-07T14:53:43.531Z">
 <meta property="article:author" content="John Doe">
 <meta property="article:tag" content="算法">
+<meta property="article:tag" content="c++">
 <meta property="article:tag" content="力扣">
-<meta property="article:tag" content="递归">
-<meta property="article:tag" content="c">
-<meta property="article:tag" content="编程">
+<meta property="article:tag" content="链表">
+<meta property="article:tag" content="指针">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/tnnnnt/picgo/img/20220207224612.png">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -157,20 +157,20 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-力扣808-分汤" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-两两交换链表中的节点" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      力扣808.分汤
+      两两交换链表中的节点
     </h1>
   
 
         
-        <a href="/2021/05/20/%E5%8A%9B%E6%89%A3808-%E5%88%86%E6%B1%A4/" class="archive-article-date">
-  	<time datetime="2021-05-20T07:38:07.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-05-20</time>
+        <a href="/2022/02/07/%E4%B8%A4%E4%B8%A4%E4%BA%A4%E6%8D%A2%E9%93%BE%E8%A1%A8%E4%B8%AD%E7%9A%84%E8%8A%82%E7%82%B9/" class="archive-article-date">
+  	<time datetime="2022-02-07T14:45:24.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-02-07</time>
 </a>
         
         
@@ -182,47 +182,18 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <blockquote>
-<h3 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h3></blockquote>
-<p>有 A 和 B 两种类型的汤。一开始每种类型的汤有 N 毫升。有四种分配操作：</p>
+        <hr>
+<p><img src="https://cdn.jsdelivr.net/gh/tnnnnt/picgo/img/20220207224612.png" alt="image-20220207224612894"></p>
 <span id="more"></span>
 
-<ol>
-<li>提供 100ml 的汤A 和 0ml 的汤B。</li>
-<li>提供 75ml 的汤A 和 25ml 的汤B。</li>
-<li>提供 50ml 的汤A 和 50ml 的汤B。</li>
-<li>提供 25ml 的汤A 和 75ml 的汤B。</li>
-</ol>
-<p>当我们把汤分配给某人之后，汤就没有了。每个回合，我们将从四种概率同为0.25的操作中进行分配选择。如果汤的剩余量不足以完成某次操作，我们将尽可能分配。当两种类型的汤都分配完时，停止操作。</p>
-<p>注意不存在先分配100 ml汤B的操作。</p>
-<p>需要返回的值： 汤A先分配完的概率 + 汤A和汤B同时分配完的概率 / 2。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">示例:</span><br><span class="line">输入: N &#x3D; 50</span><br><span class="line">输出: 0.625</span><br><span class="line">解释:</span><br><span class="line">如果我们选择前两个操作，A将首先变为空。对于第三个操作，A和B会同时变为空。对于第四个操作，B将首先变为空。</span><br><span class="line">所以A变为空的总概率加上A和B同时变为空的概率的一半是 0.25 *(1 + 1 + 0.5 + 0)&#x3D; 0.625。</span><br></pre></td></tr></table></figure>
-
-<p><strong>注释</strong>:</p>
-<ul>
-<li>0 &lt;= N &lt;= 10^9。</li>
-<li>返回值在 10^-6 的范围将被认为是正确的。</li>
-</ul>
 <hr>
 <blockquote>
 <h3 id="解题思路"><a href="#解题思路" class="headerlink" title="解题思路"></a>解题思路</h3></blockquote>
-<p>四种分配方式的AB分配量都是25的整倍数，为了便于计算，将其数据全都除以25，即：</p>
-<ol>
-<li>4A+0B</li>
-<li>3A+1B</li>
-<li>2A+2B</li>
-<li>1A+3B</li>
-</ol>
-<p>而对于输入的数据n也要进行相应的处理，即对其除以25，若不能整除，则多出来的部分以1计入，即：</p>
-<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">n=(n+<span class="number">24</span>)/<span class="number">25</span>;</span><br></pre></td></tr></table></figure>
-
-<p>定义函数gailv(int a,int b)，传入的参数a和b分别代表汤A和汤B的剩余量，起初将n赋值给a和b代入函数。<br>因为每一次选择后，只要AB汤都还有剩，就要继续从等概率的四种分配方式中选择其中一种继续下去，以此循环，所以用递归的方式解题。<br>当我想到这里并把代码提交后发现超出时间限制，原因可能是该递归运算涉及的数据过多导致性能下降。<br>于是再定义了一个二维数组用于缓存中间计算结果，提高性能。<br>修改好代码再次提交后发现执行错误，显示最后执行的输入为660295675，于是思考着，当n足够大时，输出是趋近于1的，所以我测试了多个数据，最终发现当n&gt;4800时，输出为1。因此，当n&gt;4800时，直接返回1，极大地提高了效率。</p>
-<hr>
+<p>此题用递归，首先判断当前头结点或头结点的下一结点是否为空，若其中一个为空，则返回当前头结点，若两个都不为空则进行下面的操作，定义newhead结点为当前头结点的下一节点，然后让newhead指向head，即使newhead成为新的头结点，而head要指向head-&gt;next-&gt;next，则递归调用当前函数把head-&gt;next-&gt;next作为head传入，之后直接让head指向其返回值即可，最后返回新的头结点newhead。</p>
 <blockquote>
 <h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3></blockquote>
-<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">double</span> cache[<span class="number">5000</span>][<span class="number">5000</span>];</span><br><span class="line"><span class="function"><span class="keyword">double</span> <span class="title">gailv</span><span class="params">(<span class="keyword">int</span> a,<span class="keyword">int</span> b)</span></span>&#123;</span><br><span class="line">    <span class="keyword">double</span> hc;</span><br><span class="line">    <span class="keyword">if</span>(a&lt;=<span class="number">0</span>)&#123;</span><br><span class="line">        <span class="keyword">if</span>(b&gt;<span class="number">0</span>)<span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">return</span> <span class="number">0.5</span>;</span><br><span class="line">    &#125;<span class="keyword">else</span> <span class="keyword">if</span>(b&lt;=<span class="number">0</span>)<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">if</span>(cache[a][b])<span class="keyword">return</span> cache[a][b];</span><br><span class="line">    hc=(<span class="number">0.25</span>*(gailv(a<span class="number">-4</span>,b)+gailv(a<span class="number">-3</span>,b<span class="number">-1</span>)+gailv(a<span class="number">-2</span>,b<span class="number">-2</span>)+gailv(a<span class="number">-1</span>,b<span class="number">-3</span>)));</span><br><span class="line">    cache[a][b]=hc;</span><br><span class="line">    <span class="keyword">return</span> hc;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">double</span> <span class="title">soupServings</span><span class="params">(<span class="keyword">int</span> n)</span></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(n&gt;<span class="number">4800</span>)<span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">    n=(n+<span class="number">24</span>)/<span class="number">25</span>;</span><br><span class="line">    <span class="keyword">return</span> gailv(n,n);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Definition for singly-linked list.</span></span><br><span class="line"><span class="comment"> * struct ListNode &#123;</span></span><br><span class="line"><span class="comment"> *     int val;</span></span><br><span class="line"><span class="comment"> *     ListNode *next;</span></span><br><span class="line"><span class="comment"> *     ListNode() : val(0), next(nullptr) &#123;&#125;</span></span><br><span class="line"><span class="comment"> *     ListNode(int x) : val(x), next(nullptr) &#123;&#125;</span></span><br><span class="line"><span class="comment"> *     ListNode(int x, ListNode *next) : val(x), next(next) &#123;&#125;</span></span><br><span class="line"><span class="comment"> * &#125;;</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function">ListNode* <span class="title">swapPairs</span><span class="params">(ListNode* head)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(!head||!head-&gt;next)  <span class="keyword">return</span> head;</span><br><span class="line">        ListNode* newhead=head-&gt;next;</span><br><span class="line">        ListNode* rest=head-&gt;next-&gt;next;</span><br><span class="line">        newhead-&gt;next=head;</span><br><span class="line">        head-&gt;next=<span class="built_in">swapPairs</span>(rest);</span><br><span class="line">        <span class="keyword">return</span> newhead;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
 
-<p>链接：<a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/soup-servings/solution/li-kou-808fen-tang-by-competent-mccarthy-kfz8/">https://leetcode-cn.com/problems/soup-servings/solution/li-kou-808fen-tang-by-competent-mccarthy-kfz8/</a><br>来源：力扣（LeetCode）<br>著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。</p>
 
       
 
@@ -274,19 +245,19 @@
         		</li>
       		 
         		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">c++</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
         			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">力扣</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">递归</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">链表</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">c</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">编程</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">指针</a>
         		</li>
       		
 		</ul>
@@ -342,7 +313,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2021/05/20/%E5%8A%9B%E6%89%A3808-%E5%88%86%E6%B1%A4/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2022/02/07/%E4%B8%A4%E4%B8%A4%E4%BA%A4%E6%8D%A2%E9%93%BE%E8%A1%A8%E4%B8%AD%E7%9A%84%E8%8A%82%E7%82%B9/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -356,18 +327,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2021/05/20/matlab%E7%9F%A9%E9%98%B5%E6%93%8D%E4%BD%9C/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          matlab矩阵操作
-        
-      </div>
-    </a>
   
-  
-    <a href="/2021/05/20/%E5%8A%9B%E6%89%A3779-%E7%AC%ACk%E4%B8%AA%E8%AF%AD%E6%B3%95%E7%AC%A6%E5%8F%B7/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">力扣779.第k个语法符号</div>
+    <a href="/2022/02/07/%E5%88%A0%E9%99%A4%E9%93%BE%E8%A1%A8%E7%9A%84%E5%80%92%E6%95%B0%E7%AC%AC-N-%E4%B8%AA%E7%BB%93%E7%82%B9/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">删除链表的倒数第 N 个结点</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -394,7 +356,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%A2%98%E7%9B%AE%E6%8F%8F%E8%BF%B0"><span class="toc-number">1.</span> <span class="toc-text">题目描述</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A7%A3%E9%A2%98%E6%80%9D%E8%B7%AF"><span class="toc-number">2.</span> <span class="toc-text">解题思路</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%A3%E7%A0%81"><span class="toc-number">3.</span> <span class="toc-text">代码</span></a></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A7%A3%E9%A2%98%E6%80%9D%E8%B7%AF"><span class="toc-number">1.</span> <span class="toc-text">解题思路</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%A3%E7%A0%81"><span class="toc-number">2.</span> <span class="toc-text">代码</span></a></li></ol>
                     </div>
                 </span>
             </div>
@@ -408,7 +370,7 @@
   
   <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="力扣808-分汤" data-title="力扣808.分汤" data-url="http://example.com/2021/05/20/%E5%8A%9B%E6%89%A3808-%E5%88%86%E6%B1%A4/"></div>
+	<div class="ds-thread" data-thread-key="两两交换链表中的节点" data-title="两两交换链表中的节点" data-url="http://example.com/2022/02/07/%E4%B8%A4%E4%B8%A4%E4%BA%A4%E6%8D%A2%E9%93%BE%E8%A1%A8%E4%B8%AD%E7%9A%84%E8%8A%82%E7%82%B9/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
@@ -431,8 +393,8 @@
   <div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
 <script>
   var cloudTieConfig = {
-    url: "http://example.com/2021/05/20/%E5%8A%9B%E6%89%A3808-%E5%88%86%E6%B1%A4/", 
-    sourceId: "力扣808-分汤",
+    url: "http://example.com/2022/02/07/%E4%B8%A4%E4%B8%A4%E4%BA%A4%E6%8D%A2%E9%93%BE%E8%A1%A8%E4%B8%AD%E7%9A%84%E8%8A%82%E7%82%B9/", 
+    sourceId: "两两交换链表中的节点",
     productKey: "true",
     target: "cloud-tie-wrapper"
   };
@@ -441,7 +403,7 @@
   
 
   
-  <div id="SOHUCS" sid="力扣808-分汤" ></div> 
+  <div id="SOHUCS" sid="两两交换链表中的节点" ></div> 
 <script charset="utf-8" type="text/javascript" src="//changyan.sohu.com/upload/changyan.js" ></script>
 <script type="text/javascript">
     window.changyan.api.config({
@@ -476,7 +438,7 @@
 <script src="//imsun.github.io/gitment/dist/gitment.browser.js"></script>
 <script>
 var gitment = new Gitment({
-  id: "http://example.com/2021/05/20/%E5%8A%9B%E6%89%A3808-%E5%88%86%E6%B1%A4/",
+  id: "http://example.com/2022/02/07/%E4%B8%A4%E4%B8%A4%E4%BA%A4%E6%8D%A2%E9%93%BE%E8%A1%A8%E4%B8%AD%E7%9A%84%E8%8A%82%E7%82%B9/",
   owner: '73168136',
   repo: 'tnnnnt.github.io',
   oauth: {
