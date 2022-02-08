@@ -6,20 +6,37 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>16种时态终极详解 | Hexo</title>
+  <title>删除排序链表中的重复元素 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="时态4大难点 时&amp;态未分清 动词变位 助动词 与其他语法概念混合，如： 现在完成：The rabbit has eaten a carrot. +情态：The rabbit may have eaten a carrot. 改时间+否定：The rabbit could not have eaten a carrot. 改为被动：The carrot could not have bee">
+  <meta name="description" content="题目描述">
 <meta property="og:type" content="article">
-<meta property="og:title" content="16种时态终极详解">
-<meta property="og:url" content="http://example.com/2021/04/16/16%E7%A7%8D%E6%97%B6%E6%80%81%E7%BB%88%E6%9E%81%E8%AF%A6%E8%A7%A3/index.html">
+<meta property="og:title" content="删除排序链表中的重复元素">
+<meta property="og:url" content="http://example.com/2022/02/08/%E5%88%A0%E9%99%A4%E6%8E%92%E5%BA%8F%E9%93%BE%E8%A1%A8%E4%B8%AD%E7%9A%84%E9%87%8D%E5%A4%8D%E5%85%83%E7%B4%A0/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="时态4大难点 时&amp;态未分清 动词变位 助动词 与其他语法概念混合，如： 现在完成：The rabbit has eaten a carrot. +情态：The rabbit may have eaten a carrot. 改时间+否定：The rabbit could not have eaten a carrot. 改为被动：The carrot could not have bee">
+<meta property="og:description" content="题目描述">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2021-04-16T08:19:40.000Z">
-<meta property="article:modified_time" content="2021-04-20T14:24:15.744Z">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/tnnnnt/picgo/img/20220208104028.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/tnnnnt/picgo/img/20220208105734.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/tnnnnt/picgo/img/20220208111901.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/tnnnnt/picgo/img/20220208112109.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/tnnnnt/picgo/img/20220208112205.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/tnnnnt/picgo/img/20220208112325.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/tnnnnt/picgo/img/20220208115354.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/tnnnnt/picgo/img/20220208120233.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/tnnnnt/picgo/img/20220208121057.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/tnnnnt/picgo/img/20220208121155.png">
+<meta property="article:published_time" content="2022-02-08T02:38:37.000Z">
+<meta property="article:modified_time" content="2022-02-08T04:12:51.428Z">
 <meta property="article:author" content="John Doe">
-<meta property="article:tag" content="英语">
+<meta property="article:tag" content="算法">
+<meta property="article:tag" content="c++">
+<meta property="article:tag" content="力扣">
+<meta property="article:tag" content="链表">
+<meta property="article:tag" content="指针">
+<meta property="article:tag" content="数据结构">
+<meta property="article:tag" content="双指针">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/tnnnnt/picgo/img/20220208104028.png">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -153,20 +170,20 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-16种时态终极详解" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-删除排序链表中的重复元素" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      16种时态终极详解
+      删除排序链表中的重复元素
     </h1>
   
 
         
-        <a href="/2021/04/16/16%E7%A7%8D%E6%97%B6%E6%80%81%E7%BB%88%E6%9E%81%E8%AF%A6%E8%A7%A3/" class="archive-article-date">
-  	<time datetime="2021-04-16T08:19:40.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-04-16</time>
+        <a href="/2022/02/08/%E5%88%A0%E9%99%A4%E6%8E%92%E5%BA%8F%E9%93%BE%E8%A1%A8%E4%B8%AD%E7%9A%84%E9%87%8D%E5%A4%8D%E5%85%83%E7%B4%A0/" class="archive-article-date">
+  	<time datetime="2022-02-08T02:38:37.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-02-08</time>
 </a>
         
         
@@ -178,214 +195,63 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <hr>
-<h2 id="时态4大难点"><a href="#时态4大难点" class="headerlink" title="时态4大难点"></a>时态4大难点</h2><ol>
-<li>时&amp;态未分清</li>
-<li>动词变位</li>
-<li>助动词</li>
-<li>与其他语法概念混合，如：<ol>
-<li>现在完成：The rabbit has eaten a carrot.</li>
-<li>+情态：The rabbit may have eaten a carrot.</li>
-<li>改时间+否定：The rabbit could not have eaten a carrot.</li>
-<li>改为被动：The carrot could not have been eaten by the rabbit.</li>
-</ol>
-</li>
-</ol>
+        <blockquote>
+<h3 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h3></blockquote>
+<p><img src="https://cdn.jsdelivr.net/gh/tnnnnt/picgo/img/20220208104028.png" alt="image-20220208104021763"></p>
 <span id="more"></span>
 
 <hr>
-<ul>
-<li><h2 id="现在"><a href="#现在" class="headerlink" title="现在"></a>现在</h2><ul>
-<li><h3 id="一般现在时态"><a href="#一般现在时态" class="headerlink" title="一般现在时态"></a>一般现在时态</h3><ul>
-<li><h4 id="构成"><a href="#构成" class="headerlink" title="构成"></a>构成</h4><ul>
-<li><h5 id="动词原形"><a href="#动词原形" class="headerlink" title="+动词原形"></a>+动词原形</h5></li>
-<li><h5 id="动词原形-s（第三人称单数）"><a href="#动词原形-s（第三人称单数）" class="headerlink" title="+动词原形+s（第三人称单数）"></a>+动词原形+s（第三人称单数）</h5></li>
-</ul>
+<blockquote>
+<h3 id="解题思路一"><a href="#解题思路一" class="headerlink" title="解题思路一"></a>解题思路一</h3></blockquote>
+<p>如果头结点为NULL，则直接返回head，不为NULL则进行如下操作：</p>
+<ol>
+<li><p>定义一个指针 h 指向 head</p>
+<p><img src="https://cdn.jsdelivr.net/gh/tnnnnt/picgo/img/20220208105734.png" alt="image-20220208105734585"></p>
 </li>
-<li><h4 id="常见情况"><a href="#常见情况" class="headerlink" title="常见情况"></a>常见情况</h4><ul>
-<li><h5 id="表达事实"><a href="#表达事实" class="headerlink" title="表达事实"></a>表达事实</h5></li>
-<li><h5 id="表达习惯-重复的动作"><a href="#表达习惯-重复的动作" class="headerlink" title="表达习惯/重复的动作"></a>表达习惯/重复的动作</h5></li>
-<li><h5 id="表示预计发生的事"><a href="#表示预计发生的事" class="headerlink" title="表示预计发生的事"></a>表示预计发生的事</h5></li>
-</ul>
+<li><p>判断 h 的指针域即其指向的下一结点是否为空，若为空则返回 head ，不为空则继续执行下面的操作</p>
 </li>
-</ul>
+</ol>
+<p><img src="https://cdn.jsdelivr.net/gh/tnnnnt/picgo/img/20220208111901.png" alt="image-20220208111901475"></p>
+<ol start="3">
+<li><p>判断 h 的数据域与其下一结点的数据域是否相等，若相等执行4，不相等执行5</p>
 </li>
-<li><h3 id="现在进行时态"><a href="#现在进行时态" class="headerlink" title="现在进行时态"></a>现在进行时态</h3><ul>
-<li><h4 id="构成：am-are-is-动词的现在分词"><a href="#构成：am-are-is-动词的现在分词" class="headerlink" title="构成：am/are/is+动词的现在分词"></a>构成：am/are/is+动词的现在分词</h4><ul>
-<li><h5 id="be"><a href="#be" class="headerlink" title="be"></a>be</h5><ul>
-<li><h6 id="（连）系动词"><a href="#（连）系动词" class="headerlink" title="（连）系动词"></a>（连）系动词</h6></li>
-<li><h6 id="助动词，构成时态"><a href="#助动词，构成时态" class="headerlink" title="助动词，构成时态"></a>助动词，构成时态</h6></li>
-</ul>
+<li><p>将 h 的下一结点的指针域赋给 h 的指针域，即改变 h 的下一结点为原先下一结点的下一结点，接着执行2</p>
 </li>
-<li><h5 id="现在分词：通常-ing，有些动词在此基础上改变拼写，如：write-gt-writing-hit-gt-hitting-die-gt-dying"><a href="#现在分词：通常-ing，有些动词在此基础上改变拼写，如：write-gt-writing-hit-gt-hitting-die-gt-dying" class="headerlink" title="现在分词：通常+ing，有些动词在此基础上改变拼写，如：write-&gt;writing,hit-&gt;hitting,die-&gt;dying"></a>现在分词：通常+ing，有些动词在此基础上改变拼写，如：write-&gt;writing,hit-&gt;hitting,die-&gt;dying</h5></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><h3 id="现在完成时态"><a href="#现在完成时态" class="headerlink" title="现在完成时态"></a>现在完成时态</h3><ul>
-<li><h4 id="构成：have-has-动词的过去分词"><a href="#构成：have-has-动词的过去分词" class="headerlink" title="构成：have/has+动词的过去分词"></a>构成：have/has+动词的过去分词</h4><ul>
-<li><h5 id="have"><a href="#have" class="headerlink" title="have"></a>have</h5><ul>
-<li><h6 id="实义动词，有"><a href="#实义动词，有" class="headerlink" title="实义动词，有"></a>实义动词，有</h6></li>
-<li><h6 id="助动词，构成时态-1"><a href="#助动词，构成时态-1" class="headerlink" title="助动词，构成时态"></a>助动词，构成时态</h6></li>
-</ul>
-</li>
-<li><h5 id="过去分词：通常-ed，有些动词是“不规则变化”，如：eat-gt-eaten-bring-gt-brought-feel-gt-felt"><a href="#过去分词：通常-ed，有些动词是“不规则变化”，如：eat-gt-eaten-bring-gt-brought-feel-gt-felt" class="headerlink" title="过去分词：通常+ed，有些动词是“不规则变化”，如：eat-&gt;eaten,bring-&gt;brought,feel-&gt;felt."></a>过去分词：通常+ed，有些动词是“不规则变化”，如：eat-&gt;eaten,bring-&gt;brought,feel-&gt;felt.</h5><ul>
-<li><h6 id="“不规则”动词的“规律”"><a href="#“不规则”动词的“规律”" class="headerlink" title="“不规则”动词的“规律”"></a><a target="_blank" rel="noopener" href="https://www.yingyutu.com/bgz">“不规则”动词的“规律”</a></h6></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><h3 id="现在完成进行时态"><a href="#现在完成进行时态" class="headerlink" title="现在完成进行时态"></a>现在完成进行时态</h3><ul>
-<li><h4 id="构成：have-has-been-动词的现在分词"><a href="#构成：have-has-been-动词的现在分词" class="headerlink" title="构成：have/has+been+动词的现在分词"></a>构成：have/has+been+动词的现在分词</h4></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
+</ol>
+<p><img src="https://cdn.jsdelivr.net/gh/tnnnnt/picgo/img/20220208112109.png" alt="image-20220208112109462"></p>
+<ol start="5">
+<li>令 h 的下一结点为 h ，执行2</li>
+</ol>
+<p><img src="https://cdn.jsdelivr.net/gh/tnnnnt/picgo/img/20220208112205.png" alt="image-20220208112205030"></p>
+<blockquote>
+<h3 id="代码一"><a href="#代码一" class="headerlink" title="代码一"></a>代码一</h3></blockquote>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Definition for singly-linked list.</span></span><br><span class="line"><span class="comment"> * struct ListNode &#123;</span></span><br><span class="line"><span class="comment"> *     int val;</span></span><br><span class="line"><span class="comment"> *     ListNode *next;</span></span><br><span class="line"><span class="comment"> *     ListNode() : val(0), next(nullptr) &#123;&#125;</span></span><br><span class="line"><span class="comment"> *     ListNode(int x) : val(x), next(nullptr) &#123;&#125;</span></span><br><span class="line"><span class="comment"> *     ListNode(int x, ListNode *next) : val(x), next(next) &#123;&#125;</span></span><br><span class="line"><span class="comment"> * &#125;;</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function">ListNode* <span class="title">deleteDuplicates</span><span class="params">(ListNode* head)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(head)&#123;</span><br><span class="line">            ListNode* h=head;</span><br><span class="line">            <span class="keyword">while</span>(h-&gt;next)&#123;</span><br><span class="line">                <span class="keyword">if</span>(h-&gt;val==h-&gt;next-&gt;val)&#123;</span><br><span class="line">                    h-&gt;next=h-&gt;next-&gt;next;</span><br><span class="line">                &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">                    h=h-&gt;next;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> head;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://cdn.jsdelivr.net/gh/tnnnnt/picgo/img/20220208112325.png" alt="image-20220208112325896"></p>
 <hr>
-<ul>
-<li><h2 id="过去"><a href="#过去" class="headerlink" title="过去"></a>过去</h2><ul>
-<li><h3 id="一般过去时态"><a href="#一般过去时态" class="headerlink" title="一般过去时态"></a>一般过去时态</h3><ul>
-<li><h4 id="构成：-动词过去式"><a href="#构成：-动词过去式" class="headerlink" title="构成：+动词过去式"></a>构成：+动词过去式</h4><ul>
-<li><h5 id="过去式"><a href="#过去式" class="headerlink" title="过去式"></a>过去式</h5><ul>
-<li><h6 id="通常-ed"><a href="#通常-ed" class="headerlink" title="通常+ed"></a>通常+ed</h6></li>
-<li><h6 id="“不规则”动词的“规律”-1"><a href="#“不规则”动词的“规律”-1" class="headerlink" title="“不规则”动词的“规律”"></a><a target="_blank" rel="noopener" href="https://www.yingyutu.com/bgz">“不规则”动词的“规律”</a></h6></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><h4 id="注意："><a href="#注意：" class="headerlink" title="注意："></a>注意：</h4><ul>
-<li><h5 id="现在的习惯动作：I-play-basketball"><a href="#现在的习惯动作：I-play-basketball" class="headerlink" title="现在的习惯动作：I play basketball."></a>现在的习惯动作：I play basketball.</h5></li>
-<li><h5 id="过去的习惯动作：I-played-basketball-（F），I-used-to-play-basketball-（T）"><a href="#过去的习惯动作：I-played-basketball-（F），I-used-to-play-basketball-（T）" class="headerlink" title="过去的习惯动作：I played basketball.（F），I used to play basketball.（T）"></a>过去的习惯动作：I played basketball.（F），I used to play basketball.（T）</h5></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><h3 id="过去进行时态"><a href="#过去进行时态" class="headerlink" title="过去进行时态"></a>过去进行时态</h3><ul>
-<li><h4 id="构成：was-were-动词的现在分词"><a href="#构成：was-were-动词的现在分词" class="headerlink" title="构成：was/were+动词的现在分词"></a>构成：was/were+动词的现在分词</h4></li>
-</ul>
-</li>
-<li><h3 id="过去完成时态"><a href="#过去完成时态" class="headerlink" title="过去完成时态"></a>过去完成时态</h3><ul>
-<li><h4 id="构成：had-动词的过去分词"><a href="#构成：had-动词的过去分词" class="headerlink" title="构成：had+动词的过去分词"></a>构成：had+动词的过去分词</h4></li>
-</ul>
-</li>
-<li><h3 id="过去完成进行时态"><a href="#过去完成进行时态" class="headerlink" title="过去完成进行时态"></a>过去完成进行时态</h3><ul>
-<li><h4 id="构成：had-been-动词的现在分词"><a href="#构成：had-been-动词的现在分词" class="headerlink" title="构成：had+been+动词的现在分词"></a>构成：had+been+动词的现在分词</h4></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<hr>
-<ul>
-<li><h2 id="将来"><a href="#将来" class="headerlink" title="将来"></a>将来</h2><ul>
-<li><h3 id="一般将来时态"><a href="#一般将来时态" class="headerlink" title="一般将来时态"></a>一般将来时态</h3><ul>
-<li><h4 id="将来时态需要助动词（will-shall）帮忙"><a href="#将来时态需要助动词（will-shall）帮忙" class="headerlink" title="将来时态需要助动词（will/shall）帮忙"></a>将来时态需要助动词（will/shall）帮忙</h4></li>
-<li><h4 id="英语“表达”将来时态"><a href="#英语“表达”将来时态" class="headerlink" title="英语“表达”将来时态"></a>英语“表达”将来时态</h4><ul>
-<li><h5 id="一般现在时态可以表达将来的动作，如：The-bus-leaves-at-8PM"><a href="#一般现在时态可以表达将来的动作，如：The-bus-leaves-at-8PM" class="headerlink" title="一般现在时态可以表达将来的动作，如：The bus leaves at 8PM."></a>一般现在时态可以表达将来的动作，如：The bus leaves at 8PM.</h5></li>
-<li><h5 id="助动词be的变位-going-to-动词原形，如：I-am-going-to-eat-a-carrot"><a href="#助动词be的变位-going-to-动词原形，如：I-am-going-to-eat-a-carrot" class="headerlink" title="助动词be的变位+going+to+动词原形，如：I am going to eat a carrot."></a>助动词be的变位+going+to+动词原形，如：I am going to eat a carrot.</h5></li>
-<li><h5 id="甚至上句的going也可以省略，即助动词be的变位-to-动词原形，如：You-are-to-eat-a-carrot"><a href="#甚至上句的going也可以省略，即助动词be的变位-to-动词原形，如：You-are-to-eat-a-carrot" class="headerlink" title="甚至上句的going也可以省略，即助动词be的变位+to+动词原形，如：You are to eat a carrot."></a>甚至上句的going也可以省略，即助动词be的变位+to+动词原形，如：You are to eat a carrot.</h5></li>
-<li><h5 id="又或者也可以用介词about取代going，即-about-to-动词原形，如：I-am-about-to-eat-a-carrot"><a href="#又或者也可以用介词about取代going，即-about-to-动词原形，如：I-am-about-to-eat-a-carrot" class="headerlink" title="又或者也可以用介词about取代going，即+about+to+动词原形，如：I am about to eat a carrot."></a>又或者也可以用介词about取代going，即+about+to+动词原形，如：I am about to eat a carrot.</h5></li>
-</ul>
-</li>
-<li><h4 id="构成：will-动词原型"><a href="#构成：will-动词原型" class="headerlink" title="构成：will+动词原型"></a>构成：will+动词原型</h4></li>
-<li><h4 id="描述：将来某个时间点发生的动作（说话者十分确定会发生的事）"><a href="#描述：将来某个时间点发生的动作（说话者十分确定会发生的事）" class="headerlink" title="描述：将来某个时间点发生的动作（说话者十分确定会发生的事）"></a>描述：将来某个时间点发生的动作（说话者十分确定会发生的事）</h4><ul>
-<li><h5 id="如果不太确定，就不能用一般将来时态。（要借助动词的“语气”）"><a href="#如果不太确定，就不能用一般将来时态。（要借助动词的“语气”）" class="headerlink" title="如果不太确定，就不能用一般将来时态。（要借助动词的“语气”）"></a>如果不太确定，就不能用一般将来时态。（要借助动词的“语气”）</h5></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><h3 id="将来进行时态"><a href="#将来进行时态" class="headerlink" title="将来进行时态"></a>将来进行时态</h3><ul>
-<li><h4 id="构成：will-be-动词的现在分词"><a href="#构成：will-be-动词的现在分词" class="headerlink" title="构成：will+be+动词的现在分词"></a>构成：will+be+动词的现在分词</h4></li>
-<li><h4 id="描述：在将来某个时间，某个动作是在进行的过程中"><a href="#描述：在将来某个时间，某个动作是在进行的过程中" class="headerlink" title="描述：在将来某个时间，某个动作是在进行的过程中"></a>描述：在将来某个时间，某个动作是在进行的过程中</h4></li>
-</ul>
-</li>
-<li><h3 id="将来完成时态（不常用）"><a href="#将来完成时态（不常用）" class="headerlink" title="将来完成时态（不常用）"></a>将来完成时态（不常用）</h3><ul>
-<li><h4 id="构成：will-have-动词的过去分词"><a href="#构成：will-have-动词的过去分词" class="headerlink" title="构成：will+have+动词的过去分词"></a>构成：will+have+动词的过去分词</h4></li>
-</ul>
-</li>
-<li><h3 id="将来完成进行时态（不常用）"><a href="#将来完成进行时态（不常用）" class="headerlink" title="将来完成进行时态（不常用）"></a>将来完成进行时态（不常用）</h3><ul>
-<li><h4 id="构成：will-have-been-动词的现在分词"><a href="#构成：will-have-been-动词的现在分词" class="headerlink" title="构成：will+have+been+动词的现在分词"></a>构成：will+have+been+动词的现在分词</h4></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<hr>
-<ul>
-<li><h2 id="过去将来（不常用）"><a href="#过去将来（不常用）" class="headerlink" title="过去将来（不常用）"></a>过去将来（不常用）</h2><ul>
-<li><h3 id="过去将来时态常出现于从句"><a href="#过去将来时态常出现于从句" class="headerlink" title="过去将来时态常出现于从句"></a>过去将来时态常出现于从句</h3></li>
-<li><h3 id="一般过去将来时态"><a href="#一般过去将来时态" class="headerlink" title="一般过去将来时态"></a>一般过去将来时态</h3><ul>
-<li><h4 id="构成：would-动词原形，或was-were-going-to-动词原形"><a href="#构成：would-动词原形，或was-were-going-to-动词原形" class="headerlink" title="构成：would+动词原形，或was/were+going+to+动词原形"></a>构成：would+动词原形，或was/were+going+to+动词原形</h4></li>
-<li><h4 id="would的多义"><a href="#would的多义" class="headerlink" title="would的多义"></a>would的多义</h4><ul>
-<li><h5 id="will的过去式变位，构成时态"><a href="#will的过去式变位，构成时态" class="headerlink" title="will的过去式变位，构成时态"></a>will的过去式变位，构成时态</h5></li>
-<li><h5 id="构成动词的虚拟语气"><a href="#构成动词的虚拟语气" class="headerlink" title="构成动词的虚拟语气"></a>构成动词的虚拟语气</h5></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><h3 id="过去将来进行时态"><a href="#过去将来进行时态" class="headerlink" title="过去将来进行时态"></a>过去将来进行时态</h3><ul>
-<li><h4 id="构成：would-be-动词的现在分词"><a href="#构成：would-be-动词的现在分词" class="headerlink" title="构成：would+be+动词的现在分词"></a>构成：would+be+动词的现在分词</h4></li>
-</ul>
-</li>
-<li><h3 id="过去将来完成时态"><a href="#过去将来完成时态" class="headerlink" title="过去将来完成时态"></a>过去将来完成时态</h3><ul>
-<li><h4 id="构成：would-have-动词的过去分词"><a href="#构成：would-have-动词的过去分词" class="headerlink" title="构成：would+have+动词的过去分词"></a>构成：would+have+动词的过去分词</h4></li>
-</ul>
-</li>
-<li><h3 id="过去将来完成进行时态"><a href="#过去将来完成进行时态" class="headerlink" title="过去将来完成进行时态"></a>过去将来完成进行时态</h3><ul>
-<li><h4 id="构成：would-have-been-动词的现在分词"><a href="#构成：would-have-been-动词的现在分词" class="headerlink" title="构成：would+have+been+动词的现在分词"></a>构成：would+have+been+动词的现在分词</h4></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<hr>
-<ul>
-<li><h2 id="总结："><a href="#总结：" class="headerlink" title="总结："></a>总结：</h2></li>
-</ul>
-<table>
-<thead>
-<tr>
-<th></th>
-<th>一般</th>
-<th>进行</th>
-<th>完成</th>
-<th>完成进行</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><strong>现在</strong></td>
-<td>+动词原形(s)</td>
-<td>+am/is/are+现在分词</td>
-<td>+have/has+过去分词</td>
-<td>+have/has+been+现在分词</td>
-</tr>
-<tr>
-<td><strong>过去</strong></td>
-<td>+动词过去式</td>
-<td>+was/were+现在分词</td>
-<td>+had+过去分词</td>
-<td>+had+been+现在分词</td>
-</tr>
-<tr>
-<td><strong>将来</strong></td>
-<td>+will+动词原形</td>
-<td>+will+be+现在分词</td>
-<td>+will+have+过去分词</td>
-<td>+will+have+been+现在分词</td>
-</tr>
-<tr>
-<td><strong>过去将来</strong></td>
-<td>+would+动词原形</td>
-<td>+would+be+现在分词</td>
-<td>+would+have+过去分词</td>
-<td>+would+have+been+现在分词</td>
-</tr>
-</tbody></table>
-<hr>
-<h2 id="参考文献："><a href="#参考文献：" class="headerlink" title="参考文献："></a>参考文献：</h2><p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1Sv411y7d8">B站up主–英语兔–英语语法: 16种时态终极详解 (合集)(看完就懂)</a></p>
+<blockquote>
+<h3 id="解题思路二（双指针）"><a href="#解题思路二（双指针）" class="headerlink" title="解题思路二（双指针）"></a>解题思路二（双指针）</h3></blockquote>
+<p>如果头结点为NULL，则直接返回head，不为NULL则进行如下操作：</p>
+<ol>
+<li>定义双指针，一个快指针 fast 指向头结点的下一节点，一个慢指针 slow 指向头结点</li>
+</ol>
+<p><img src="https://cdn.jsdelivr.net/gh/tnnnnt/picgo/img/20220208115354.png" alt="image-20220208115354152"></p>
+<ol start="2">
+<li>判断 fast 是否为空，若为空，则使 slow 的指针域为空，然后返回 head ，若不为空，则进行如下操作</li>
+<li>判断 fast 的数据域和 slow 的数据域是否相等，若相等则执行4，不相等则执行5</li>
+<li>不同于前一个思路的直接改变指向，而是先把 fast 往链表后移一位，可以避免多个相同数据导致的繁琐的改变指向的操作，接着执行2</li>
+</ol>
+<p><img src="https://cdn.jsdelivr.net/gh/tnnnnt/picgo/img/20220208120233.png" alt="image-20220208120232931"></p>
+<ol start="5">
+<li>使 slow 的指针域变为 fast ，即使 slow 的下一节点为 fast ，然后使 slow 和 fast 都向链表后移一位，接着执行2</li>
+</ol>
+<p><img src="https://cdn.jsdelivr.net/gh/tnnnnt/picgo/img/20220208121057.png" alt="image-20220208121057685"></p>
+<blockquote>
+<h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3></blockquote>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Definition for singly-linked list.</span></span><br><span class="line"><span class="comment"> * struct ListNode &#123;</span></span><br><span class="line"><span class="comment"> *     int val;</span></span><br><span class="line"><span class="comment"> *     ListNode *next;</span></span><br><span class="line"><span class="comment"> *     ListNode() : val(0), next(nullptr) &#123;&#125;</span></span><br><span class="line"><span class="comment"> *     ListNode(int x) : val(x), next(nullptr) &#123;&#125;</span></span><br><span class="line"><span class="comment"> *     ListNode(int x, ListNode *next) : val(x), next(next) &#123;&#125;</span></span><br><span class="line"><span class="comment"> * &#125;;</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function">ListNode* <span class="title">deleteDuplicates</span><span class="params">(ListNode* head)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(head)&#123;</span><br><span class="line">            ListNode* fast=head-&gt;next;</span><br><span class="line">            ListNode* slow=head;</span><br><span class="line">            <span class="keyword">while</span>(fast)&#123;</span><br><span class="line">                <span class="keyword">if</span>(fast-&gt;val==slow-&gt;val)&#123;</span><br><span class="line">                    fast=fast-&gt;next;</span><br><span class="line">                &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">                    slow-&gt;next=fast;</span><br><span class="line">                    slow=slow-&gt;next;</span><br><span class="line">                    fast=fast-&gt;next;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            slow-&gt;next=<span class="literal">NULL</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> head;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://cdn.jsdelivr.net/gh/tnnnnt/picgo/img/20220208121155.png" alt="image-20220208121155693"></p>
+<p>很明显比解法一快一点</p>
 
       
 
@@ -433,7 +299,31 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">英语</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">算法</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">c++</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">力扣</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">链表</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">指针</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">数据结构</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">双指针</a>
         		</li>
       		
 		</ul>
@@ -489,7 +379,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2021/04/16/16%E7%A7%8D%E6%97%B6%E6%80%81%E7%BB%88%E6%9E%81%E8%AF%A6%E8%A7%A3/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2022/02/08/%E5%88%A0%E9%99%A4%E6%8E%92%E5%BA%8F%E9%93%BE%E8%A1%A8%E4%B8%AD%E7%9A%84%E9%87%8D%E5%A4%8D%E5%85%83%E7%B4%A0/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -503,18 +393,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2021/04/18/windows%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          windows常用快捷键
-        
-      </div>
-    </a>
   
-  
-    <a href="/2021/04/15/%E8%8B%B1%E8%AF%AD%E8%AF%AD%E6%B3%95%E4%BD%93%E7%B3%BB%E6%95%B4%E7%90%86/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">英语语法体系整理</div>
+    <a href="/2022/02/07/%E4%B8%A4%E4%B8%A4%E4%BA%A4%E6%8D%A2%E9%93%BE%E8%A1%A8%E4%B8%AD%E7%9A%84%E8%8A%82%E7%82%B9/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">两两交换链表中的节点</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -541,7 +422,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%97%B6%E6%80%814%E5%A4%A7%E9%9A%BE%E7%82%B9"><span class="toc-number">1.</span> <span class="toc-text">时态4大难点</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%8E%B0%E5%9C%A8"><span class="toc-number">2.</span> <span class="toc-text">现在</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%80%E8%88%AC%E7%8E%B0%E5%9C%A8%E6%97%B6%E6%80%81"><span class="toc-number">2.1.</span> <span class="toc-text">一般现在时态</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9E%84%E6%88%90"><span class="toc-number">2.1.1.</span> <span class="toc-text">构成</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%8A%A8%E8%AF%8D%E5%8E%9F%E5%BD%A2"><span class="toc-number">2.1.1.1.</span> <span class="toc-text">+动词原形</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%8A%A8%E8%AF%8D%E5%8E%9F%E5%BD%A2-s%EF%BC%88%E7%AC%AC%E4%B8%89%E4%BA%BA%E7%A7%B0%E5%8D%95%E6%95%B0%EF%BC%89"><span class="toc-number">2.1.1.2.</span> <span class="toc-text">+动词原形+s（第三人称单数）</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%B8%B8%E8%A7%81%E6%83%85%E5%86%B5"><span class="toc-number">2.1.2.</span> <span class="toc-text">常见情况</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E8%A1%A8%E8%BE%BE%E4%BA%8B%E5%AE%9E"><span class="toc-number">2.1.2.1.</span> <span class="toc-text">表达事实</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E8%A1%A8%E8%BE%BE%E4%B9%A0%E6%83%AF-%E9%87%8D%E5%A4%8D%E7%9A%84%E5%8A%A8%E4%BD%9C"><span class="toc-number">2.1.2.2.</span> <span class="toc-text">表达习惯&#x2F;重复的动作</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E8%A1%A8%E7%A4%BA%E9%A2%84%E8%AE%A1%E5%8F%91%E7%94%9F%E7%9A%84%E4%BA%8B"><span class="toc-number">2.1.2.3.</span> <span class="toc-text">表示预计发生的事</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%8E%B0%E5%9C%A8%E8%BF%9B%E8%A1%8C%E6%97%B6%E6%80%81"><span class="toc-number">2.2.</span> <span class="toc-text">现在进行时态</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9E%84%E6%88%90%EF%BC%9Aam-are-is-%E5%8A%A8%E8%AF%8D%E7%9A%84%E7%8E%B0%E5%9C%A8%E5%88%86%E8%AF%8D"><span class="toc-number">2.2.1.</span> <span class="toc-text">构成：am&#x2F;are&#x2F;is+动词的现在分词</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#be"><span class="toc-number">2.2.1.1.</span> <span class="toc-text">be</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#%EF%BC%88%E8%BF%9E%EF%BC%89%E7%B3%BB%E5%8A%A8%E8%AF%8D"><span class="toc-number">2.2.1.1.1.</span> <span class="toc-text">（连）系动词</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#%E5%8A%A9%E5%8A%A8%E8%AF%8D%EF%BC%8C%E6%9E%84%E6%88%90%E6%97%B6%E6%80%81"><span class="toc-number">2.2.1.1.2.</span> <span class="toc-text">助动词，构成时态</span></a></li></ol></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E7%8E%B0%E5%9C%A8%E5%88%86%E8%AF%8D%EF%BC%9A%E9%80%9A%E5%B8%B8-ing%EF%BC%8C%E6%9C%89%E4%BA%9B%E5%8A%A8%E8%AF%8D%E5%9C%A8%E6%AD%A4%E5%9F%BA%E7%A1%80%E4%B8%8A%E6%94%B9%E5%8F%98%E6%8B%BC%E5%86%99%EF%BC%8C%E5%A6%82%EF%BC%9Awrite-gt-writing-hit-gt-hitting-die-gt-dying"><span class="toc-number">2.2.1.2.</span> <span class="toc-text">现在分词：通常+ing，有些动词在此基础上改变拼写，如：write-&gt;writing,hit-&gt;hitting,die-&gt;dying</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%8E%B0%E5%9C%A8%E5%AE%8C%E6%88%90%E6%97%B6%E6%80%81"><span class="toc-number">2.3.</span> <span class="toc-text">现在完成时态</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9E%84%E6%88%90%EF%BC%9Ahave-has-%E5%8A%A8%E8%AF%8D%E7%9A%84%E8%BF%87%E5%8E%BB%E5%88%86%E8%AF%8D"><span class="toc-number">2.3.1.</span> <span class="toc-text">构成：have&#x2F;has+动词的过去分词</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#have"><span class="toc-number">2.3.1.1.</span> <span class="toc-text">have</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#%E5%AE%9E%E4%B9%89%E5%8A%A8%E8%AF%8D%EF%BC%8C%E6%9C%89"><span class="toc-number">2.3.1.1.1.</span> <span class="toc-text">实义动词，有</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#%E5%8A%A9%E5%8A%A8%E8%AF%8D%EF%BC%8C%E6%9E%84%E6%88%90%E6%97%B6%E6%80%81-1"><span class="toc-number">2.3.1.1.2.</span> <span class="toc-text">助动词，构成时态</span></a></li></ol></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E8%BF%87%E5%8E%BB%E5%88%86%E8%AF%8D%EF%BC%9A%E9%80%9A%E5%B8%B8-ed%EF%BC%8C%E6%9C%89%E4%BA%9B%E5%8A%A8%E8%AF%8D%E6%98%AF%E2%80%9C%E4%B8%8D%E8%A7%84%E5%88%99%E5%8F%98%E5%8C%96%E2%80%9D%EF%BC%8C%E5%A6%82%EF%BC%9Aeat-gt-eaten-bring-gt-brought-feel-gt-felt"><span class="toc-number">2.3.1.2.</span> <span class="toc-text">过去分词：通常+ed，有些动词是“不规则变化”，如：eat-&gt;eaten,bring-&gt;brought,feel-&gt;felt.</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#%E2%80%9C%E4%B8%8D%E8%A7%84%E5%88%99%E2%80%9D%E5%8A%A8%E8%AF%8D%E7%9A%84%E2%80%9C%E8%A7%84%E5%BE%8B%E2%80%9D"><span class="toc-number">2.3.1.2.1.</span> <span class="toc-text">“不规则”动词的“规律”</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%8E%B0%E5%9C%A8%E5%AE%8C%E6%88%90%E8%BF%9B%E8%A1%8C%E6%97%B6%E6%80%81"><span class="toc-number">2.4.</span> <span class="toc-text">现在完成进行时态</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9E%84%E6%88%90%EF%BC%9Ahave-has-been-%E5%8A%A8%E8%AF%8D%E7%9A%84%E7%8E%B0%E5%9C%A8%E5%88%86%E8%AF%8D"><span class="toc-number">2.4.1.</span> <span class="toc-text">构成：have&#x2F;has+been+动词的现在分词</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BF%87%E5%8E%BB"><span class="toc-number">3.</span> <span class="toc-text">过去</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%80%E8%88%AC%E8%BF%87%E5%8E%BB%E6%97%B6%E6%80%81"><span class="toc-number">3.1.</span> <span class="toc-text">一般过去时态</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9E%84%E6%88%90%EF%BC%9A-%E5%8A%A8%E8%AF%8D%E8%BF%87%E5%8E%BB%E5%BC%8F"><span class="toc-number">3.1.1.</span> <span class="toc-text">构成：+动词过去式</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E8%BF%87%E5%8E%BB%E5%BC%8F"><span class="toc-number">3.1.1.1.</span> <span class="toc-text">过去式</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#%E9%80%9A%E5%B8%B8-ed"><span class="toc-number">3.1.1.1.1.</span> <span class="toc-text">通常+ed</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#%E2%80%9C%E4%B8%8D%E8%A7%84%E5%88%99%E2%80%9D%E5%8A%A8%E8%AF%8D%E7%9A%84%E2%80%9C%E8%A7%84%E5%BE%8B%E2%80%9D-1"><span class="toc-number">3.1.1.1.2.</span> <span class="toc-text">“不规则”动词的“规律”</span></a></li></ol></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%B3%A8%E6%84%8F%EF%BC%9A"><span class="toc-number">3.1.2.</span> <span class="toc-text">注意：</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E7%8E%B0%E5%9C%A8%E7%9A%84%E4%B9%A0%E6%83%AF%E5%8A%A8%E4%BD%9C%EF%BC%9AI-play-basketball"><span class="toc-number">3.1.2.1.</span> <span class="toc-text">现在的习惯动作：I play basketball.</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E8%BF%87%E5%8E%BB%E7%9A%84%E4%B9%A0%E6%83%AF%E5%8A%A8%E4%BD%9C%EF%BC%9AI-played-basketball-%EF%BC%88F%EF%BC%89%EF%BC%8CI-used-to-play-basketball-%EF%BC%88T%EF%BC%89"><span class="toc-number">3.1.2.2.</span> <span class="toc-text">过去的习惯动作：I played basketball.（F），I used to play basketball.（T）</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BF%87%E5%8E%BB%E8%BF%9B%E8%A1%8C%E6%97%B6%E6%80%81"><span class="toc-number">3.2.</span> <span class="toc-text">过去进行时态</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9E%84%E6%88%90%EF%BC%9Awas-were-%E5%8A%A8%E8%AF%8D%E7%9A%84%E7%8E%B0%E5%9C%A8%E5%88%86%E8%AF%8D"><span class="toc-number">3.2.1.</span> <span class="toc-text">构成：was&#x2F;were+动词的现在分词</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BF%87%E5%8E%BB%E5%AE%8C%E6%88%90%E6%97%B6%E6%80%81"><span class="toc-number">3.3.</span> <span class="toc-text">过去完成时态</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9E%84%E6%88%90%EF%BC%9Ahad-%E5%8A%A8%E8%AF%8D%E7%9A%84%E8%BF%87%E5%8E%BB%E5%88%86%E8%AF%8D"><span class="toc-number">3.3.1.</span> <span class="toc-text">构成：had+动词的过去分词</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BF%87%E5%8E%BB%E5%AE%8C%E6%88%90%E8%BF%9B%E8%A1%8C%E6%97%B6%E6%80%81"><span class="toc-number">3.4.</span> <span class="toc-text">过去完成进行时态</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9E%84%E6%88%90%EF%BC%9Ahad-been-%E5%8A%A8%E8%AF%8D%E7%9A%84%E7%8E%B0%E5%9C%A8%E5%88%86%E8%AF%8D"><span class="toc-number">3.4.1.</span> <span class="toc-text">构成：had+been+动词的现在分词</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B0%86%E6%9D%A5"><span class="toc-number">4.</span> <span class="toc-text">将来</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%80%E8%88%AC%E5%B0%86%E6%9D%A5%E6%97%B6%E6%80%81"><span class="toc-number">4.1.</span> <span class="toc-text">一般将来时态</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%B0%86%E6%9D%A5%E6%97%B6%E6%80%81%E9%9C%80%E8%A6%81%E5%8A%A9%E5%8A%A8%E8%AF%8D%EF%BC%88will-shall%EF%BC%89%E5%B8%AE%E5%BF%99"><span class="toc-number">4.1.1.</span> <span class="toc-text">将来时态需要助动词（will&#x2F;shall）帮忙</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%8B%B1%E8%AF%AD%E2%80%9C%E8%A1%A8%E8%BE%BE%E2%80%9D%E5%B0%86%E6%9D%A5%E6%97%B6%E6%80%81"><span class="toc-number">4.1.2.</span> <span class="toc-text">英语“表达”将来时态</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E4%B8%80%E8%88%AC%E7%8E%B0%E5%9C%A8%E6%97%B6%E6%80%81%E5%8F%AF%E4%BB%A5%E8%A1%A8%E8%BE%BE%E5%B0%86%E6%9D%A5%E7%9A%84%E5%8A%A8%E4%BD%9C%EF%BC%8C%E5%A6%82%EF%BC%9AThe-bus-leaves-at-8PM"><span class="toc-number">4.1.2.1.</span> <span class="toc-text">一般现在时态可以表达将来的动作，如：The bus leaves at 8PM.</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%8A%A9%E5%8A%A8%E8%AF%8Dbe%E7%9A%84%E5%8F%98%E4%BD%8D-going-to-%E5%8A%A8%E8%AF%8D%E5%8E%9F%E5%BD%A2%EF%BC%8C%E5%A6%82%EF%BC%9AI-am-going-to-eat-a-carrot"><span class="toc-number">4.1.2.2.</span> <span class="toc-text">助动词be的变位+going+to+动词原形，如：I am going to eat a carrot.</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E7%94%9A%E8%87%B3%E4%B8%8A%E5%8F%A5%E7%9A%84going%E4%B9%9F%E5%8F%AF%E4%BB%A5%E7%9C%81%E7%95%A5%EF%BC%8C%E5%8D%B3%E5%8A%A9%E5%8A%A8%E8%AF%8Dbe%E7%9A%84%E5%8F%98%E4%BD%8D-to-%E5%8A%A8%E8%AF%8D%E5%8E%9F%E5%BD%A2%EF%BC%8C%E5%A6%82%EF%BC%9AYou-are-to-eat-a-carrot"><span class="toc-number">4.1.2.3.</span> <span class="toc-text">甚至上句的going也可以省略，即助动词be的变位+to+动词原形，如：You are to eat a carrot.</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%8F%88%E6%88%96%E8%80%85%E4%B9%9F%E5%8F%AF%E4%BB%A5%E7%94%A8%E4%BB%8B%E8%AF%8Dabout%E5%8F%96%E4%BB%A3going%EF%BC%8C%E5%8D%B3-about-to-%E5%8A%A8%E8%AF%8D%E5%8E%9F%E5%BD%A2%EF%BC%8C%E5%A6%82%EF%BC%9AI-am-about-to-eat-a-carrot"><span class="toc-number">4.1.2.4.</span> <span class="toc-text">又或者也可以用介词about取代going，即+about+to+动词原形，如：I am about to eat a carrot.</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9E%84%E6%88%90%EF%BC%9Awill-%E5%8A%A8%E8%AF%8D%E5%8E%9F%E5%9E%8B"><span class="toc-number">4.1.3.</span> <span class="toc-text">构成：will+动词原型</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%8F%8F%E8%BF%B0%EF%BC%9A%E5%B0%86%E6%9D%A5%E6%9F%90%E4%B8%AA%E6%97%B6%E9%97%B4%E7%82%B9%E5%8F%91%E7%94%9F%E7%9A%84%E5%8A%A8%E4%BD%9C%EF%BC%88%E8%AF%B4%E8%AF%9D%E8%80%85%E5%8D%81%E5%88%86%E7%A1%AE%E5%AE%9A%E4%BC%9A%E5%8F%91%E7%94%9F%E7%9A%84%E4%BA%8B%EF%BC%89"><span class="toc-number">4.1.4.</span> <span class="toc-text">描述：将来某个时间点发生的动作（说话者十分确定会发生的事）</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%A6%82%E6%9E%9C%E4%B8%8D%E5%A4%AA%E7%A1%AE%E5%AE%9A%EF%BC%8C%E5%B0%B1%E4%B8%8D%E8%83%BD%E7%94%A8%E4%B8%80%E8%88%AC%E5%B0%86%E6%9D%A5%E6%97%B6%E6%80%81%E3%80%82%EF%BC%88%E8%A6%81%E5%80%9F%E5%8A%A9%E5%8A%A8%E8%AF%8D%E7%9A%84%E2%80%9C%E8%AF%AD%E6%B0%94%E2%80%9D%EF%BC%89"><span class="toc-number">4.1.4.1.</span> <span class="toc-text">如果不太确定，就不能用一般将来时态。（要借助动词的“语气”）</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B0%86%E6%9D%A5%E8%BF%9B%E8%A1%8C%E6%97%B6%E6%80%81"><span class="toc-number">4.2.</span> <span class="toc-text">将来进行时态</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9E%84%E6%88%90%EF%BC%9Awill-be-%E5%8A%A8%E8%AF%8D%E7%9A%84%E7%8E%B0%E5%9C%A8%E5%88%86%E8%AF%8D"><span class="toc-number">4.2.1.</span> <span class="toc-text">构成：will+be+动词的现在分词</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%8F%8F%E8%BF%B0%EF%BC%9A%E5%9C%A8%E5%B0%86%E6%9D%A5%E6%9F%90%E4%B8%AA%E6%97%B6%E9%97%B4%EF%BC%8C%E6%9F%90%E4%B8%AA%E5%8A%A8%E4%BD%9C%E6%98%AF%E5%9C%A8%E8%BF%9B%E8%A1%8C%E7%9A%84%E8%BF%87%E7%A8%8B%E4%B8%AD"><span class="toc-number">4.2.2.</span> <span class="toc-text">描述：在将来某个时间，某个动作是在进行的过程中</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B0%86%E6%9D%A5%E5%AE%8C%E6%88%90%E6%97%B6%E6%80%81%EF%BC%88%E4%B8%8D%E5%B8%B8%E7%94%A8%EF%BC%89"><span class="toc-number">4.3.</span> <span class="toc-text">将来完成时态（不常用）</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9E%84%E6%88%90%EF%BC%9Awill-have-%E5%8A%A8%E8%AF%8D%E7%9A%84%E8%BF%87%E5%8E%BB%E5%88%86%E8%AF%8D"><span class="toc-number">4.3.1.</span> <span class="toc-text">构成：will+have+动词的过去分词</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B0%86%E6%9D%A5%E5%AE%8C%E6%88%90%E8%BF%9B%E8%A1%8C%E6%97%B6%E6%80%81%EF%BC%88%E4%B8%8D%E5%B8%B8%E7%94%A8%EF%BC%89"><span class="toc-number">4.4.</span> <span class="toc-text">将来完成进行时态（不常用）</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9E%84%E6%88%90%EF%BC%9Awill-have-been-%E5%8A%A8%E8%AF%8D%E7%9A%84%E7%8E%B0%E5%9C%A8%E5%88%86%E8%AF%8D"><span class="toc-number">4.4.1.</span> <span class="toc-text">构成：will+have+been+动词的现在分词</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BF%87%E5%8E%BB%E5%B0%86%E6%9D%A5%EF%BC%88%E4%B8%8D%E5%B8%B8%E7%94%A8%EF%BC%89"><span class="toc-number">5.</span> <span class="toc-text">过去将来（不常用）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BF%87%E5%8E%BB%E5%B0%86%E6%9D%A5%E6%97%B6%E6%80%81%E5%B8%B8%E5%87%BA%E7%8E%B0%E4%BA%8E%E4%BB%8E%E5%8F%A5"><span class="toc-number">5.1.</span> <span class="toc-text">过去将来时态常出现于从句</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%80%E8%88%AC%E8%BF%87%E5%8E%BB%E5%B0%86%E6%9D%A5%E6%97%B6%E6%80%81"><span class="toc-number">5.2.</span> <span class="toc-text">一般过去将来时态</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9E%84%E6%88%90%EF%BC%9Awould-%E5%8A%A8%E8%AF%8D%E5%8E%9F%E5%BD%A2%EF%BC%8C%E6%88%96was-were-going-to-%E5%8A%A8%E8%AF%8D%E5%8E%9F%E5%BD%A2"><span class="toc-number">5.2.1.</span> <span class="toc-text">构成：would+动词原形，或was&#x2F;were+going+to+动词原形</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#would%E7%9A%84%E5%A4%9A%E4%B9%89"><span class="toc-number">5.2.2.</span> <span class="toc-text">would的多义</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#will%E7%9A%84%E8%BF%87%E5%8E%BB%E5%BC%8F%E5%8F%98%E4%BD%8D%EF%BC%8C%E6%9E%84%E6%88%90%E6%97%B6%E6%80%81"><span class="toc-number">5.2.2.1.</span> <span class="toc-text">will的过去式变位，构成时态</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%9E%84%E6%88%90%E5%8A%A8%E8%AF%8D%E7%9A%84%E8%99%9A%E6%8B%9F%E8%AF%AD%E6%B0%94"><span class="toc-number">5.2.2.2.</span> <span class="toc-text">构成动词的虚拟语气</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BF%87%E5%8E%BB%E5%B0%86%E6%9D%A5%E8%BF%9B%E8%A1%8C%E6%97%B6%E6%80%81"><span class="toc-number">5.3.</span> <span class="toc-text">过去将来进行时态</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9E%84%E6%88%90%EF%BC%9Awould-be-%E5%8A%A8%E8%AF%8D%E7%9A%84%E7%8E%B0%E5%9C%A8%E5%88%86%E8%AF%8D"><span class="toc-number">5.3.1.</span> <span class="toc-text">构成：would+be+动词的现在分词</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BF%87%E5%8E%BB%E5%B0%86%E6%9D%A5%E5%AE%8C%E6%88%90%E6%97%B6%E6%80%81"><span class="toc-number">5.4.</span> <span class="toc-text">过去将来完成时态</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9E%84%E6%88%90%EF%BC%9Awould-have-%E5%8A%A8%E8%AF%8D%E7%9A%84%E8%BF%87%E5%8E%BB%E5%88%86%E8%AF%8D"><span class="toc-number">5.4.1.</span> <span class="toc-text">构成：would+have+动词的过去分词</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BF%87%E5%8E%BB%E5%B0%86%E6%9D%A5%E5%AE%8C%E6%88%90%E8%BF%9B%E8%A1%8C%E6%97%B6%E6%80%81"><span class="toc-number">5.5.</span> <span class="toc-text">过去将来完成进行时态</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9E%84%E6%88%90%EF%BC%9Awould-have-been-%E5%8A%A8%E8%AF%8D%E7%9A%84%E7%8E%B0%E5%9C%A8%E5%88%86%E8%AF%8D"><span class="toc-number">5.5.1.</span> <span class="toc-text">构成：would+have+been+动词的现在分词</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%80%BB%E7%BB%93%EF%BC%9A"><span class="toc-number">6.</span> <span class="toc-text">总结：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE%EF%BC%9A"><span class="toc-number">7.</span> <span class="toc-text">参考文献：</span></a></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%A2%98%E7%9B%AE%E6%8F%8F%E8%BF%B0"><span class="toc-number">1.</span> <span class="toc-text">题目描述</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A7%A3%E9%A2%98%E6%80%9D%E8%B7%AF%E4%B8%80"><span class="toc-number">2.</span> <span class="toc-text">解题思路一</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%A3%E7%A0%81%E4%B8%80"><span class="toc-number">3.</span> <span class="toc-text">代码一</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A7%A3%E9%A2%98%E6%80%9D%E8%B7%AF%E4%BA%8C%EF%BC%88%E5%8F%8C%E6%8C%87%E9%92%88%EF%BC%89"><span class="toc-number">4.</span> <span class="toc-text">解题思路二（双指针）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%A3%E7%A0%81"><span class="toc-number">5.</span> <span class="toc-text">代码</span></a></li></ol>
                     </div>
                 </span>
             </div>
@@ -555,7 +436,7 @@
   
   <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="16种时态终极详解" data-title="16种时态终极详解" data-url="http://example.com/2021/04/16/16%E7%A7%8D%E6%97%B6%E6%80%81%E7%BB%88%E6%9E%81%E8%AF%A6%E8%A7%A3/"></div>
+	<div class="ds-thread" data-thread-key="删除排序链表中的重复元素" data-title="删除排序链表中的重复元素" data-url="http://example.com/2022/02/08/%E5%88%A0%E9%99%A4%E6%8E%92%E5%BA%8F%E9%93%BE%E8%A1%A8%E4%B8%AD%E7%9A%84%E9%87%8D%E5%A4%8D%E5%85%83%E7%B4%A0/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
@@ -578,8 +459,8 @@
   <div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
 <script>
   var cloudTieConfig = {
-    url: "http://example.com/2021/04/16/16%E7%A7%8D%E6%97%B6%E6%80%81%E7%BB%88%E6%9E%81%E8%AF%A6%E8%A7%A3/", 
-    sourceId: "16种时态终极详解",
+    url: "http://example.com/2022/02/08/%E5%88%A0%E9%99%A4%E6%8E%92%E5%BA%8F%E9%93%BE%E8%A1%A8%E4%B8%AD%E7%9A%84%E9%87%8D%E5%A4%8D%E5%85%83%E7%B4%A0/", 
+    sourceId: "删除排序链表中的重复元素",
     productKey: "true",
     target: "cloud-tie-wrapper"
   };
@@ -588,7 +469,7 @@
   
 
   
-  <div id="SOHUCS" sid="16种时态终极详解" ></div> 
+  <div id="SOHUCS" sid="删除排序链表中的重复元素" ></div> 
 <script charset="utf-8" type="text/javascript" src="//changyan.sohu.com/upload/changyan.js" ></script>
 <script type="text/javascript">
     window.changyan.api.config({
@@ -623,7 +504,7 @@
 <script src="//imsun.github.io/gitment/dist/gitment.browser.js"></script>
 <script>
 var gitment = new Gitment({
-  id: "http://example.com/2021/04/16/16%E7%A7%8D%E6%97%B6%E6%80%81%E7%BB%88%E6%9E%81%E8%AF%A6%E8%A7%A3/",
+  id: "http://example.com/2022/02/08/%E5%88%A0%E9%99%A4%E6%8E%92%E5%BA%8F%E9%93%BE%E8%A1%A8%E4%B8%AD%E7%9A%84%E9%87%8D%E5%A4%8D%E5%85%83%E7%B4%A0/",
   owner: '73168136',
   repo: 'tnnnnt.github.io',
   oauth: {
