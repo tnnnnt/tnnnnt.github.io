@@ -6,24 +6,30 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>两两交换链表中的节点 | Hexo</title>
+  <title>删除链表中的节点 力扣 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="article">
-<meta property="og:title" content="两两交换链表中的节点">
-<meta property="og:url" content="http://example.com/2022/02/07/%E4%B8%A4%E4%B8%A4%E4%BA%A4%E6%8D%A2%E9%93%BE%E8%A1%A8%E4%B8%AD%E7%9A%84%E8%8A%82%E7%82%B9/index.html">
+  <meta name="description" content="题目描述">
+<meta property="og:type" content="article">
+<meta property="og:title" content="删除链表中的节点 力扣">
+<meta property="og:url" content="http://example.com/2022/02/10/%E5%88%A0%E9%99%A4%E9%93%BE%E8%A1%A8%E4%B8%AD%E7%9A%84%E8%8A%82%E7%82%B9-%E5%8A%9B%E6%89%A3/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="题目描述">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/tnnnnt/picgo/img/20220207224612.png">
-<meta property="article:published_time" content="2022-02-07T14:45:24.000Z">
-<meta property="article:modified_time" content="2022-02-07T14:53:43.531Z">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/tnnnnt/picgo/img/20220210194936.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/tnnnnt/picgo/img/20220210195004.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/tnnnnt/picgo/img/20220210195013.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/tnnnnt/picgo/img/20220210195609.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/tnnnnt/picgo/img/20220210195623.png">
+<meta property="article:published_time" content="2022-02-10T11:48:36.000Z">
+<meta property="article:modified_time" content="2022-02-10T11:56:24.106Z">
 <meta property="article:author" content="John Doe">
 <meta property="article:tag" content="算法">
 <meta property="article:tag" content="c++">
 <meta property="article:tag" content="力扣">
 <meta property="article:tag" content="链表">
-<meta property="article:tag" content="指针">
+<meta property="article:tag" content="数据结构">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/tnnnnt/picgo/img/20220207224612.png">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/tnnnnt/picgo/img/20220210194936.png">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -157,20 +163,20 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-两两交换链表中的节点" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-删除链表中的节点-力扣" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      两两交换链表中的节点
+      删除链表中的节点 力扣
     </h1>
   
 
         
-        <a href="/2022/02/07/%E4%B8%A4%E4%B8%A4%E4%BA%A4%E6%8D%A2%E9%93%BE%E8%A1%A8%E4%B8%AD%E7%9A%84%E8%8A%82%E7%82%B9/" class="archive-article-date">
-  	<time datetime="2022-02-07T14:45:24.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-02-07</time>
+        <a href="/2022/02/10/%E5%88%A0%E9%99%A4%E9%93%BE%E8%A1%A8%E4%B8%AD%E7%9A%84%E8%8A%82%E7%82%B9-%E5%8A%9B%E6%89%A3/" class="archive-article-date">
+  	<time datetime="2022-02-10T11:48:36.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-02-10</time>
 </a>
         
         
@@ -183,17 +189,25 @@
     <div class="article-entry" itemprop="articleBody">
       
         <hr>
-<p><img src="https://cdn.jsdelivr.net/gh/tnnnnt/picgo/img/20220207224612.png" alt="image-20220207224612894"></p>
+<blockquote>
+<h3 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h3></blockquote>
+<p><img src="https://cdn.jsdelivr.net/gh/tnnnnt/picgo/img/20220210194936.png" alt="image-20220210194936688"></p>
 <span id="more"></span>
 
+<p><img src="https://cdn.jsdelivr.net/gh/tnnnnt/picgo/img/20220210195004.png" alt="image-20220210195004311"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/tnnnnt/picgo/img/20220210195013.png" alt="image-20220210195013937"></p>
 <hr>
 <blockquote>
 <h3 id="解题思路"><a href="#解题思路" class="headerlink" title="解题思路"></a>解题思路</h3></blockquote>
-<p>此题用递归，首先判断当前头结点或头结点的下一结点是否为空，若其中一个为空，则返回当前头结点，若两个都不为空则进行下面的操作，定义newhead结点为当前头结点的下一节点，然后让newhead指向head，即使newhead成为新的头结点，而head要指向head-&gt;next-&gt;next，则递归调用当前函数把head-&gt;next-&gt;next作为head传入，之后直接让head指向其返回值即可，最后返回新的头结点newhead。</p>
+<p>按照常规的思路，就是先找到要删除结点的上一结点，然后把这个结点的指针域改为要删除的结点的下一结点的地址即可。</p>
+<p>然鹅这个题并不能直接定位到要删除结点的上一结点，所以只能换个思路。</p>
+<p>先把要删除结点的数据域赋值为下一结点的数据域，然后可以发现这两个结点无论删除哪个都能达到题目要求的效果，因此我们只要删除后者即可。</p>
 <blockquote>
 <h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3></blockquote>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Definition for singly-linked list.</span></span><br><span class="line"><span class="comment"> * struct ListNode &#123;</span></span><br><span class="line"><span class="comment"> *     int val;</span></span><br><span class="line"><span class="comment"> *     ListNode *next;</span></span><br><span class="line"><span class="comment"> *     ListNode() : val(0), next(nullptr) &#123;&#125;</span></span><br><span class="line"><span class="comment"> *     ListNode(int x) : val(x), next(nullptr) &#123;&#125;</span></span><br><span class="line"><span class="comment"> *     ListNode(int x, ListNode *next) : val(x), next(next) &#123;&#125;</span></span><br><span class="line"><span class="comment"> * &#125;;</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function">ListNode* <span class="title">swapPairs</span><span class="params">(ListNode* head)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(!head||!head-&gt;next)  <span class="keyword">return</span> head;</span><br><span class="line">        ListNode* newhead=head-&gt;next;</span><br><span class="line">        ListNode* rest=head-&gt;next-&gt;next;</span><br><span class="line">        newhead-&gt;next=head;</span><br><span class="line">        head-&gt;next=<span class="built_in">swapPairs</span>(rest);</span><br><span class="line">        <span class="keyword">return</span> newhead;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Definition for singly-linked list.</span></span><br><span class="line"><span class="comment"> * struct ListNode &#123;</span></span><br><span class="line"><span class="comment"> *     int val;</span></span><br><span class="line"><span class="comment"> *     ListNode *next;</span></span><br><span class="line"><span class="comment"> *     ListNode(int x) : val(x), next(NULL) &#123;&#125;</span></span><br><span class="line"><span class="comment"> * &#125;;</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">deleteNode</span><span class="params">(ListNode* node)</span> </span>&#123;</span><br><span class="line">        node-&gt;val=node-&gt;next-&gt;val;</span><br><span class="line">        node-&gt;next=node-&gt;next-&gt;next;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
 
+<p><img src="https://cdn.jsdelivr.net/gh/tnnnnt/picgo/img/20220210195609.png" alt="image-20220210195609694"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/tnnnnt/picgo/img/20220210195623.png" alt="image-20220210195623017"></p>
 
       
 
@@ -257,7 +271,7 @@
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">指针</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">数据结构</a>
         		</li>
       		
 		</ul>
@@ -313,7 +327,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2022/02/07/%E4%B8%A4%E4%B8%A4%E4%BA%A4%E6%8D%A2%E9%93%BE%E8%A1%A8%E4%B8%AD%E7%9A%84%E8%8A%82%E7%82%B9/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2022/02/10/%E5%88%A0%E9%99%A4%E9%93%BE%E8%A1%A8%E4%B8%AD%E7%9A%84%E8%8A%82%E7%82%B9-%E5%8A%9B%E6%89%A3/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -327,18 +341,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2022/02/08/%E5%88%A0%E9%99%A4%E6%8E%92%E5%BA%8F%E9%93%BE%E8%A1%A8%E4%B8%AD%E7%9A%84%E9%87%8D%E5%A4%8D%E5%85%83%E7%B4%A0/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          删除排序链表中的重复元素
-        
-      </div>
-    </a>
   
-  
-    <a href="/2022/02/07/%E5%88%A0%E9%99%A4%E9%93%BE%E8%A1%A8%E7%9A%84%E5%80%92%E6%95%B0%E7%AC%AC-N-%E4%B8%AA%E7%BB%93%E7%82%B9/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">删除链表的倒数第 N 个结点</div>
+    <a href="/2022/02/10/%E5%9B%9E%E6%96%87%E9%93%BE%E8%A1%A8-%E5%8A%9B%E6%89%A3/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">回文链表 力扣</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -365,7 +370,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A7%A3%E9%A2%98%E6%80%9D%E8%B7%AF"><span class="toc-number">1.</span> <span class="toc-text">解题思路</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%A3%E7%A0%81"><span class="toc-number">2.</span> <span class="toc-text">代码</span></a></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%A2%98%E7%9B%AE%E6%8F%8F%E8%BF%B0"><span class="toc-number">1.</span> <span class="toc-text">题目描述</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A7%A3%E9%A2%98%E6%80%9D%E8%B7%AF"><span class="toc-number">2.</span> <span class="toc-text">解题思路</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%A3%E7%A0%81"><span class="toc-number">3.</span> <span class="toc-text">代码</span></a></li></ol>
                     </div>
                 </span>
             </div>
@@ -379,7 +384,7 @@
   
   <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="两两交换链表中的节点" data-title="两两交换链表中的节点" data-url="http://example.com/2022/02/07/%E4%B8%A4%E4%B8%A4%E4%BA%A4%E6%8D%A2%E9%93%BE%E8%A1%A8%E4%B8%AD%E7%9A%84%E8%8A%82%E7%82%B9/"></div>
+	<div class="ds-thread" data-thread-key="删除链表中的节点-力扣" data-title="删除链表中的节点 力扣" data-url="http://example.com/2022/02/10/%E5%88%A0%E9%99%A4%E9%93%BE%E8%A1%A8%E4%B8%AD%E7%9A%84%E8%8A%82%E7%82%B9-%E5%8A%9B%E6%89%A3/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
@@ -402,8 +407,8 @@
   <div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
 <script>
   var cloudTieConfig = {
-    url: "http://example.com/2022/02/07/%E4%B8%A4%E4%B8%A4%E4%BA%A4%E6%8D%A2%E9%93%BE%E8%A1%A8%E4%B8%AD%E7%9A%84%E8%8A%82%E7%82%B9/", 
-    sourceId: "两两交换链表中的节点",
+    url: "http://example.com/2022/02/10/%E5%88%A0%E9%99%A4%E9%93%BE%E8%A1%A8%E4%B8%AD%E7%9A%84%E8%8A%82%E7%82%B9-%E5%8A%9B%E6%89%A3/", 
+    sourceId: "删除链表中的节点-力扣",
     productKey: "true",
     target: "cloud-tie-wrapper"
   };
@@ -412,7 +417,7 @@
   
 
   
-  <div id="SOHUCS" sid="两两交换链表中的节点" ></div> 
+  <div id="SOHUCS" sid="删除链表中的节点-力扣" ></div> 
 <script charset="utf-8" type="text/javascript" src="//changyan.sohu.com/upload/changyan.js" ></script>
 <script type="text/javascript">
     window.changyan.api.config({
@@ -447,7 +452,7 @@
 <script src="//imsun.github.io/gitment/dist/gitment.browser.js"></script>
 <script>
 var gitment = new Gitment({
-  id: "http://example.com/2022/02/07/%E4%B8%A4%E4%B8%A4%E4%BA%A4%E6%8D%A2%E9%93%BE%E8%A1%A8%E4%B8%AD%E7%9A%84%E8%8A%82%E7%82%B9/",
+  id: "http://example.com/2022/02/10/%E5%88%A0%E9%99%A4%E9%93%BE%E8%A1%A8%E4%B8%AD%E7%9A%84%E8%8A%82%E7%82%B9-%E5%8A%9B%E6%89%A3/",
   owner: '73168136',
   repo: 'tnnnnt.github.io',
   oauth: {
